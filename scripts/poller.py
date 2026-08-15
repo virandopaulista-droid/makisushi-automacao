@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Checks whether now matches a scheduled Au Gratin slot and, if so,
+"""Checks whether now matches a scheduled Maki Sushi slot and, if so,
 publishes the corresponding post from THIS WEEK'S APPROVED PLAN.
 
 Nothing is selected at posting time anymore -- that happens ahead of time in
@@ -86,17 +86,17 @@ def resolve_caption_file(post):
 
 
 def path_for_story(item):
-    base = os.environ["AUGRATIN_STORIES_DIR"]
+    base = os.environ["MAKISUSHI_STORIES_DIR"]
     return os.path.join(base, item["file"])
 
 
 def path_for_reel(item):
-    base = os.environ["AUGRATIN_VIDEOS_DIR"]
+    base = os.environ["MAKISUSHI_VIDEOS_DIR"]
     return os.path.join(base, item["folder"], item["file"])
 
 
 def path_for_feed(item):
-    base = os.environ["AUGRATIN_IMAGES_DIR"]
+    base = os.environ["MAKISUSHI_IMAGES_DIR"]
     return os.path.join(base, item["folder"], item["file"])
 
 
@@ -132,7 +132,7 @@ def handle_partial_failure(post, plan, plan_path, now, slot_label, exc):
         f"O poller tentou publicar '{slot_label}' ({post.get('date')}) e um erro interrompeu a publicacao no meio "
         "(alguns itens podem ter saido de verdade, outros nao -- nao da pra saber automaticamente qual). "
         "Para nao arriscar duplicar o que ja saiu, marquei esse post como 'posted:true' -- ele NAO sera tentado de "
-        "novo automaticamente. Confira manualmente no Facebook/Instagram da Au Gratin o que realmente foi "
+        "novo automaticamente. Confira manualmente no Facebook/Instagram da Maki Sushi o que realmente foi "
         f"publicado, e publique manualmente qualquer item que estiver faltando.\n\nErro original: {exc}"
     )
 
@@ -165,7 +165,7 @@ def handle_story(post):
         print(bash("post_story_all.sh", path))
     else:
         print(bash("post_story_video_fb.sh", path))
-        folder_id = os.environ.get("AUGRATIN_STORIES_DRIVE_FOLDER_ID", "1rBwVvcmUZTDMjU3C1WcUR8sbtaqIG8s9")
+        folder_id = os.environ.get("MAKISUSHI_STORIES_DRIVE_FOLDER_ID", "1rBwVvcmUZTDMjU3C1WcUR8sbtaqIG8s9")
         video_url = python("resolve_drive_url.py", item["file"], folder_id)
         print(bash("post_story_video_instagram.sh", video_url))
 
