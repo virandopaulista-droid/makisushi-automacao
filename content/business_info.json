@@ -1,0 +1,26 @@
+{
+  "label": "Maki Sushi",
+  "address": "📍 Rua Hermógenes Edgard Portes, 113 - Pedreira",
+  "hours": "⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30",
+  "hashtags": "",
+  "weekdayDishes": {
+    "segunda": {
+      "tags": [
+        "segunda"
+      ],
+      "dish": "Poke por R$ 39,90 (promoção seg-qua)"
+    },
+    "terca": {
+      "tags": [
+        "terca"
+      ],
+      "dish": "Poke por R$ 39,90 (promoção seg-qua)"
+    },
+    "quarta": {
+      "tags": [
+        "quarta"
+      ],
+      "dish": "Poke por R$ 39,90 (promoção seg-qua)"
+    }
+  }
+}
