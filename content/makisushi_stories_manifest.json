@@ -88,8 +88,8 @@
     {
       "file": "442CE323-17B2-4684-928A-69F06FEB2CF8.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:18:36"
     },
     {
       "file": "4892872f8a634220851d9d6e72072b0d.mov",
@@ -244,8 +244,8 @@
     {
       "file": "Delícias do mar te esperam....mp4",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:18:36"
     },
     {
       "file": "e46fa20da25b414585be1417dc70d1b8.mov",
@@ -256,8 +256,8 @@
     {
       "file": "EB86F1FE-C7F5-4827-BDF5-6CC3B5F4292F.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:18:36"
     },
     {
       "file": "F1B312A7-990C-4EBF-9286-30923D78986E.jpg",
@@ -424,8 +424,8 @@
     {
       "file": "STORIES - MAKI SUSHI (30).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:18:36"
     },
     {
       "file": "STORIES - MAKI SUSHI (31).png",
@@ -442,8 +442,8 @@
     {
       "file": "STORIES - MAKI SUSHI (33).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:18:36"
     },
     {
       "file": "STORIES - MAKI SUSHI (34).png",
@@ -514,8 +514,8 @@
     {
       "file": "STORIES - MAKI SUSHI (8).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:18:36"
     },
     {
       "file": "STORIES - MAKI SUSHI (9).png",
