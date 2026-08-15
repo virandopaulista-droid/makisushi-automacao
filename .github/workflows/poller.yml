@@ -80,6 +80,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: TEMP -- confirma que as credenciais do Meta ainda autenticam (remover apos verificacao)
+        run: python3 scripts/check_meta_credentials.py
+
       - name: Checa se ha algo a postar agora (sem montar o Drive)
         id: gate
         run: |
