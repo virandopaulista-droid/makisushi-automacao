@@ -1,0 +1,557 @@
+{
+  "drive_folder_id": "1F3WbMZlQzejEZd-6-2lOr7vU_Ge40hEB",
+  "assets": [
+    {
+      "file": "005cbe69a2514bcdae852b55e23b165f.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "0458BFB4-9D13-4FB0-A8C4-245500840B44.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "0B9A21BC-C95F-4F8D-8BD5-2D87B71D9629.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "0C4112CD-D291-4A8D-8776-E00580796446.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "0e9c36ee64194fc3a18fe077ea78f488.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "14047245-BF4A-4E1A-8C1E-1F5D68B6BC40.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "1E0D541C-158B-431B-9066-31B095F44E91.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "1F178B3B-C2BF-454F-B782-F3BD22C72283.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "221CA6B3-6B82-4DA3-B6DA-4058838970DC.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "3154fd3e9e1c4a13bb9e158957d79ca7.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "3CD57344-AC47-4D3A-ACBD-562B9206B861.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "3f39b374e5344f28b4765e2839599e88.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "3f55a51d1bc94d9f9de7165915986d09.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "3f55a51d1bc94d9f9de7165915986d09.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "442CE323-17B2-4684-928A-69F06FEB2CF8.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "4892872f8a634220851d9d6e72072b0d.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "48c79624bd154c0fa35c7ddddfbab9d6.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "61f21d9d234a4fdebb9948c37e429362.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "65DB53D1-4AFD-4A74-898D-E8B8F4565E7F.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "6C2FA926-F796-46BC-ABFF-39800F017C5C.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "6C80E25F-A956-4789-A155-079B3009C488.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "6fb8d661d8d1429f811d22fd6841c380.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "71DD6B6A-F375-450E-9E37-DD4F067118B1.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "7ACD1058-0C90-4CF7-9A39-CE1A3F4A8B46.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "802E06DE-6E55-400B-9F05-4C22ACE52E42.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "8C318AB2-602A-480E-BF8F-B0DB571D4D2B.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "989F1855-7F9C-4D43-882C-7BB46FAB24ED.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "a27914671125476888bdd4a3051bda12.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "a99346cedd594f8885aa89e9004bae9e.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "ADBA4F73-0347-4EF9-94D9-6DE1DC499F5A.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "bb780b30b7834766b0a5f9b0bbe0b28a.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "BD10824D-ED3F-402D-8B67-D0D77421069F.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "BE615D0D-3B9A-49D6-A04B-619609083F67.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "C224D0D4-D18D-4B2D-B304-A0DE350CDA07.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "C2D1ECE2-D792-46DE-B079-32528770FB9A.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "c58778411d5248bc8107295bc5903597.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "c58778411d5248bc8107295bc5903597.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "c6d0fac157754740b6a9f2776aa2611c.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "D34C071F-FCDA-497A-9E86-9F99FD633AB1.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "Delícias do mar te esperam... (1).mp4",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "Delícias do mar te esperam....mp4",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "e46fa20da25b414585be1417dc70d1b8.mov",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "EB86F1FE-C7F5-4827-BDF5-6CC3B5F4292F.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "F1B312A7-990C-4EBF-9286-30923D78986E.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "F8E54AA9-E31C-4D39-9A89-1C36212B7E0E.jpg",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "salmão grelhado com legumes + porção de arroz com gergelim.mp4",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "sexta-feira! (1).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "sexta-feira! (2).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "sexta-feira! (3).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "sexta-feira! (4).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "sexta-feira! (5).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "Sinômino.mp4",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (1).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (10).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (13).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (15).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (16).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (18).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (19).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (2).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (20).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (21).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (22).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (23).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (24).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (25).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (26).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (28).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (29).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (3).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (30).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (31).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (32).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (33).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (34).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (35).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (36).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (37).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (38).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (4).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (40).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (41).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (5).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (6).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (7).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (8).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "STORIES - MAKI SUSHI (9).png",
+      "type": "image",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "SUNOMONO DA VIDA.mp4",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "sushi fresquinho, que dá água na boca... (1).mp4",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "sushi fresquinho, que dá água na boca....mp4",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "Temaki.mp4",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    },
+    {
+      "file": "venha experimentar nosso carpaccio de salmão.mp4",
+      "type": "video",
+      "used": false,
+      "used_at": null
+    }
+  ]
+}
