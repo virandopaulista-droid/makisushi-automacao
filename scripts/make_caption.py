@@ -1,87 +1,55 @@
 #!/usr/bin/env python3
-"""Writes a simple, ready-to-post caption (feed or reel) to a temp file and
-prints its path. No AI generation -- templates modeled directly on Au
-Gratin's real Instagram captions (Rob sent 4 real examples 2026-08-05),
-picked at random so consecutive posts don't read identically.
-
-Au Gratin is dine-in only (buffet by weight, salão), NOT delivery -- never
-write "peça já"/delivery-style CTAs here. Address uses an en-dash "–"
-(meia-risca), matching the real captions -- NOT an em-dash "—" (travessão,
-banned per Rob's standing rule for GM Hamburgueria's captions too).
-
-Real info: address Rua Amador Bueno, 771, Santo Amaro; hours segunda a
-sexta, das 11h às 15h (only shown in some captions, not all -- matches real
-usage). Buffet changes daily, by weight.
-
-Day-specific specials (Rob, 2026-08-05): pass --weekday
-<segunda|terca|quarta|quinta|sexta> to get a caption naming that day's dish
-(falls back to generic buffet copy otherwise):
-  quarta: feijoada
-  quinta: massas, sushi e costela no bafo
-  sexta: salmão e rabada
-segunda/terça have no standout dish (pratos variados).
+"""Legenda generica gerada automaticamente pelo assistente de onboarding do
+painel BEEF MTK pro cliente "Maki Sushi". Sem geracao por IA -- so
+templates simples com os dados que Rob informou no formulario de
+cadastro. Edite este arquivo a vontade se o tom/informacoes mudarem.
 
 Usage: make_caption.py <feed|reel> [--weekday <dia>]
-Prints: path to the temp file containing the caption.
+Prints: caminho pro arquivo temporario com a legenda.
 """
 import random
 import sys
 import tempfile
 
-ADDRESS = "📍 Rua Amador Bueno, 771 – Santo Amaro"
-HOURS = "⏰ Segunda a sexta, das 11h às 15h"
+LABEL = "Maki Sushi"
+ADDRESS = "📍 Rua Hermógenes Edgard Portes, 113 - Pedreira"
+HOURS = "⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30"
+HASHTAGS = ""
 
-GENERIC_HASHTAGS = "#restaurantesantoamaro #selfservicesp #comidacaseira #buffetsp #almocoespecial"
-
-SPECIAL_HASHTAGS = {
-    "quarta": "#feijoada #restaurantesantoamaro #selfservicesp #buffetsp",
-    "quinta": "#massas #sushi #costelanobafo #restaurantesantoamaro #buffetsp",
-    "sexta": "#salmao #rabada #restaurantesantoamaro #selfservicesp #almocoemsp",
+WEEKDAY_DISHES = {
+    "segunda": "Poke por R$ 39,90 (promoção seg-qua)",
+    "terca": "Poke por R$ 39,90 (promoção seg-qua)",
+    "quarta": "Poke por R$ 39,90 (promoção seg-qua)",
 }
 
-WEEKDAY_SPECIALS = {
-    "quarta": "feijoada",
-    "quinta": "massas, sushi e costela no bafo",
-    "sexta": "salmão fresco e rabada",
-}
-
-# Generic templates (no standout dish that day, or a plain feed/reel post
-# not tied to a specific weekday) -- address always included, hours only
-# on some (matches the real mix Rob sent: 2 of 4 examples had no hours line).
 GENERIC_TEMPLATES = [
-    "✨ Todos os dias, um buffet completo espera por você. Monte seu prato do seu jeito e aproveite uma refeição preparada com cuidado, variedade e aquele sabor que transforma a pausa do almoço no melhor momento do dia.\n\n{address}\n\n{hashtags}",
-    "🍽️ Se você procura o melhor lugar para almoçar em Santo Amaro, o AU GRATIN tem tudo pra te conquistar!\n\nAqui você encontra inúmeras opções no buffet, comida caseira preparada com carinho e sabores que deixam qualquer almoço muito mais especial...✨\n\n{address}\n{hours}\n\n{hashtags}",
-    "✨ Que tal passar no AU GRATIN hoje?\n\nVenha nos visitar e aproveite um almoço delicioso no nosso buffet... 🍽️\n\n{address}\n{hours}",
+    "\u2728 {label} te espera hoje! Vem conferir tudo que a gente preparou com cuidado especialmente pra voce.\n\n{footer}",
+    "\U0001F37D\uFE0F Bora fazer aquele pedido/visita na {label}? Sempre com capricho, sempre pensando em te dar a melhor experiencia.\n\n{footer}",
 ]
 
-# Special-dish templates -- used when the post falls on quarta/quinta/sexta.
 SPECIAL_TEMPLATES = [
-    "🍽️ {weekday_cap} pede um almoço à altura. Hoje, o destaque fica por conta do nosso {prato}, preparados com todo o cuidado para entregar muito sabor em cada detalhe.\nE, claro, o buffet ainda conta com diversas outras opções esperando por você.\n\n{address}\n\n{hashtags}",
-    "✨ Hoje tem {prato} esperando por você no nosso buffet! Chega, monte seu prato à vontade e aproveite.\n\n{address}\n{hours}\n\n{hashtags}",
+    "\U0001F37D\uFE0F Hoje o destaque e {prato}, preparado com todo o cuidado pela {label}. Vem provar!\n\n{footer}",
 ]
 
-TEMPLATES = {"feed": GENERIC_TEMPLATES, "reel": GENERIC_TEMPLATES}
-WEEKDAY_LABEL = {"quarta": "Quarta-feira", "quinta": "Quinta-feira", "sexta": "Sexta-feira"}
+
+def build_footer():
+    lines = [l for l in [ADDRESS, HOURS, HASHTAGS] if l]
+    return "\n".join(lines)
 
 
 def build_caption(kind, weekday=None):
-    prato = WEEKDAY_SPECIALS.get(weekday)
+    prato = WEEKDAY_DISHES.get(weekday) if weekday else None
+    footer = build_footer()
     if prato:
         template = random.choice(SPECIAL_TEMPLATES)
-        return template.format(
-            weekday_cap=WEEKDAY_LABEL[weekday],
-            prato=prato,
-            address=ADDRESS,
-            hours=HOURS,
-            hashtags=SPECIAL_HASHTAGS[weekday],
-        )
+        return template.format(prato=prato, label=LABEL, footer=footer)
     template = random.choice(GENERIC_TEMPLATES)
-    return template.format(address=ADDRESS, hours=HOURS, hashtags=GENERIC_HASHTAGS)
+    return template.format(label=LABEL, footer=footer)
 
 
 def main():
     args = sys.argv[1:]
-    if not args or args[0] not in TEMPLATES:
+    if not args or args[0] not in ("feed", "reel"):
         print("Uso: make_caption.py <feed|reel> [--weekday <dia>]", file=sys.stderr)
         raise SystemExit(1)
     kind = args[0]
