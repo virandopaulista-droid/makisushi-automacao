@@ -1,0 +1,86 @@
+{
+  "week_start": "2026-08-10",
+  "status": "pending_approval",
+  "generated_at": "2026-08-15T18:12:34",
+  "posts": [
+    {
+      "date": "2026-08-10",
+      "weekday": "segunda",
+      "slot": "story",
+      "items": [
+        {
+          "file": "e46fa20da25b414585be1417dc70d1b8.mov",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-11",
+      "weekday": "terca",
+      "slot": "story",
+      "items": [
+        {
+          "file": "3154fd3e9e1c4a13bb9e158957d79ca7.mov",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "weekday": "quarta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "61f21d9d234a4fdebb9948c37e429362.mov",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "weekday": "quinta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "sushi fresquinho, que dá água na boca....mp4",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "weekday": "sexta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI (34).png",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "weekday": "sexta",
+      "slot": "reel",
+      "items": [
+        {
+          "file": "Voce encontrou o melhor lugar.mp4",
+          "folder": "Maio 26",
+          "drive_folder_id": "1wivbgepJ3JLTskmZnqVq18RDMXZZeCpg"
+        }
+      ],
+      "caption_text": "🍽️ Bora fazer aquele pedido/visita na Maki Sushi? Sempre com capricho, sempre pensando em te dar a melhor experiência.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30"
+    },
+    {
+      "date": "2026-08-15",
+      "weekday": "sabado",
+      "slot": "story",
+      "items": [
+        {
+          "file": "sushi fresquinho, que dá água na boca... (1).mp4",
+          "type": "video"
+        }
+      ]
+    }
+  ]
+}
