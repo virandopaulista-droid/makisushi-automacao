@@ -44,7 +44,7 @@ permissions:
 # - poller.py itself marks a slot posted (not left blank) even when a
 #   handler crashes partway through, for the same reason.
 concurrency:
-  group: augratin-poller
+  group: makisushi-poller
   cancel-in-progress: false
 
 env:
@@ -120,17 +120,17 @@ jobs:
           fi
           sleep 3
           rclone lsf gdrive: -R --dirs-only > "$HOME/all_dirs.txt"
-          rel_path=$(grep -i "^Ag.ncia BEEF MTK/Clientes */Au Gratin/$" "$HOME/all_dirs.txt" | head -1)
+          rel_path=$(grep -i "^Ag.ncia BEEF MTK/Clientes */Maki Sushi/$" "$HOME/all_dirs.txt" | head -1)
           if [ -z "$rel_path" ]; then
             echo "=== nao encontrado, mostrando entradas parecidas ==="
             grep -i "au gratin\|agencia\|ag.ncia" "$HOME/all_dirs.txt" | head -20
-            echo "mount failed: pasta Au Gratin nao encontrada"
+            echo "mount failed: pasta Maki Sushi nao encontrada"
             exit 1
           fi
-          augratin_dir="$HOME/gdrive/${rel_path}"
+          makisushi_dir="$HOME/gdrive/${rel_path}"
           ready=""
           for i in $(seq 1 15); do
-            if [ -d "$augratin_dir" ]; then
+            if [ -d "$makisushi_dir" ]; then
               ready=1
               break
             fi
@@ -139,11 +139,11 @@ jobs:
           if [ -z "$ready" ]; then
             echo "=== rclone mount log ==="
             cat "$HOME/rclone-mount.log" || true
-            echo "mount failed: $augratin_dir nao apareceu no mount"
+            echo "mount failed: $makisushi_dir nao apareceu no mount"
             exit 1
           fi
-          augratin_dir="${augratin_dir%/}"
-          echo "AUGRATIN_DIR=$augratin_dir" >> "$GITHUB_ENV"
+          makisushi_dir="${makisushi_dir%/}"
+          echo "MAKISUSHI_DIR=$makisushi_dir" >> "$GITHUB_ENV"
 
       - name: Write .env
         if: steps.gate.outputs.due == 'true'
@@ -151,17 +151,17 @@ jobs:
           # Some subfolder names on the Drive have a trailing space (e.g.
           # "Vídeos tratados ", "Fotos - Tratadas" does not) -- resolve the
           # real on-disk name via ls+grep instead of hardcoding it, same
-          # defensive pattern as the "Clientes */Au Gratin" lookup above.
-          stories_name=$(ls "$AUGRATIN_DIR" | grep -i "^Stories Iasmim *$" | head -1)
-          videos_name=$(ls "$AUGRATIN_DIR" | grep -i "^V.deos tratados *$" | head -1)
-          fotos_name=$(ls "$AUGRATIN_DIR" | grep -i "^Fotos - Tratadas *$" | head -1)
+          # defensive pattern as the "Clientes */Maki Sushi" lookup above.
+          stories_name=$(ls "$MAKISUSHI_DIR" | grep -i "^Stories Iasmim *$" | head -1)
+          videos_name=$(ls "$MAKISUSHI_DIR" | grep -i "^V.deos tratados *$" | head -1)
+          fotos_name=$(ls "$MAKISUSHI_DIR" | grep -i "^Fotos - Tratadas *$" | head -1)
           cat > .env <<EOF
           FB_PAGE_ACCESS_TOKEN="$FB_PAGE_ACCESS_TOKEN"
           FB_PAGE_ID="$FB_PAGE_ID"
           IG_BUSINESS_ID="$IG_BUSINESS_ID"
-          AUGRATIN_STORIES_DIR="$AUGRATIN_DIR/$stories_name"
-          AUGRATIN_VIDEOS_DIR="$AUGRATIN_DIR/$videos_name"
-          AUGRATIN_IMAGES_DIR="$AUGRATIN_DIR/$fotos_name"
+          MAKISUSHI_STORIES_DIR="$MAKISUSHI_DIR/$stories_name"
+          MAKISUSHI_VIDEOS_DIR="$MAKISUSHI_DIR/$videos_name"
+          MAKISUSHI_IMAGES_DIR="$MAKISUSHI_DIR/$fotos_name"
           EOF
           cat .env | sed 's/^\(FB_PAGE_ACCESS_TOKEN\)=.*/\1=***/'
 
@@ -184,7 +184,7 @@ jobs:
       - name: Commit any state changes (used flags, posted log)
         if: always()
         run: |
-          git config user.name "Au Gratin Automacao"
+          git config user.name "Maki Sushi Automacao"
           git config user.email "virandopaulista@gmail.com"
           git add content/*.json content/week_plans/*.json 2>/dev/null || true
           if git diff --cached --quiet; then
