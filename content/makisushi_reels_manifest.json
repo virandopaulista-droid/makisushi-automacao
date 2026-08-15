@@ -133,8 +133,8 @@
       "type": "video",
       "folder": "Maio 26",
       "drive_folder_id": "1wivbgepJ3JLTskmZnqVq18RDMXZZeCpg",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:12:34"
     },
     {
       "file": "Vídeo da copa.mp4",
