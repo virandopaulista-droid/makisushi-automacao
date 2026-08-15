@@ -83,6 +83,17 @@
       ],
       "posted": true,
       "posted_at": "2026-08-15T16:22:45"
+    },
+    {
+      "date": "2026-08-15",
+      "weekday": "sabado",
+      "slot": "story_teste_1930",
+      "items": [
+        {
+          "file": "005cbe69a2514bcdae852b55e23b165f.mov",
+          "type": "video"
+        }
+      ]
     }
   ]
 }

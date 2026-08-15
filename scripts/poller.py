@@ -45,6 +45,9 @@ PLANS_DIR = os.path.join(PROJECT_DIR, "content", "week_plans")
 SCHEDULE = [
     {"slot": "story", "weekdays": {0, 1, 2, 3, 4, 5}, "hour": 19, "minute": 0},  # Mon-Sat, restaurant opens 19h
     {"slot": "weekly", "weekdays": {4}, "hour": 17, "minute": 0},  # Friday, ahead of dinner opening
+    # TEMP: teste unico de disparo automatico (nao forcado por workflow_dispatch),
+    # 2026-08-15 19:30 -- remover depois de confirmado.
+    {"slot": "story_teste_1930", "weekdays": {5}, "hour": 19, "minute": 30},
 ]
 
 DRY_RUN = "--live" not in sys.argv[1:]
@@ -220,7 +223,7 @@ def handle_feed(post):
     print(bash("post_instagram.sh", caption_file, *photo_urls))
 
 
-HANDLERS = {"story": handle_story, "feed": handle_feed, "reel": handle_reel}
+HANDLERS = {"story": handle_story, "feed": handle_feed, "reel": handle_reel, "story_teste_1930": handle_story}
 
 
 def _arg_value(flag):
