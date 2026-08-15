@@ -1,0 +1,17 @@
+{
+  "slug": "makisushi",
+  "label": "Maki Sushi",
+  "hasWeeklySlot": true,
+  "weekdays": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "canGenerate": true,
+  "storiesFolderId": "1F3WbMZlQzejEZd-6-2lOr7vU_Ge40hEB",
+  "imagesFolderId": "1wvlrASXeBrRiTxi9UtREzDF4VrOqKeH_",
+  "videosFolderId": "1jS3tT08F76nDQwim78859zcYhGVCRpKR"
+}
