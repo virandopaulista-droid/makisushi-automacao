@@ -58,8 +58,8 @@
     {
       "file": "3154fd3e9e1c4a13bb9e158957d79ca7.mov",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:12:34"
     },
     {
       "file": "3CD57344-AC47-4D3A-ACBD-562B9206B861.jpg",
@@ -106,8 +106,8 @@
     {
       "file": "61f21d9d234a4fdebb9948c37e429362.mov",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:12:34"
     },
     {
       "file": "65DB53D1-4AFD-4A74-898D-E8B8F4565E7F.jpg",
@@ -250,8 +250,8 @@
     {
       "file": "e46fa20da25b414585be1417dc70d1b8.mov",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:12:34"
     },
     {
       "file": "EB86F1FE-C7F5-4827-BDF5-6CC3B5F4292F.jpg",
@@ -448,8 +448,8 @@
     {
       "file": "STORIES - MAKI SUSHI (34).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:12:34"
     },
     {
       "file": "STORIES - MAKI SUSHI (35).png",
@@ -532,14 +532,14 @@
     {
       "file": "sushi fresquinho, que dá água na boca... (1).mp4",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:12:34"
     },
     {
       "file": "sushi fresquinho, que dá água na boca....mp4",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-15T18:12:34"
     },
     {
       "file": "Temaki.mp4",
