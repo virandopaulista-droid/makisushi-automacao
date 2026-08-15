@@ -1,0 +1,304 @@
+{
+  "_readme": "Pool de reels da Au Gratin, agregado de subpastas mensais de 'Vídeos tratados' (Fev/Mar/Maio/Jun 26 + 'Robson edit', esta ultima adicionada 05/08/2026 a pedido do Rob). Pastas 'usados'/'Usados' dentro de cada mes foram excluidas (ja usado/arquivado). Cada entrada: file (alguns arquivos de 'Robson edit' nao tem extensao no nome real no Drive, ex. 'Casa cheia' -- confirmado via rclone lsjson, nao e' erro), folder (nome da subpasta, pra montar o caminho local via rclone), drive_folder_id (pra resolve_drive_url.py conseguir a URL publica pro lado do Instagram), type, used, used_at. generate_week_plan.py escolhe 1 nao usado por semana, reseta o pool quando esgota.",
+  "assets": [
+    {
+      "file": "Augratin edit salmao e pista.mp4",
+      "folder": "Jun 26",
+      "drive_folder_id": "1M1htkZCYP1xtz0Nk3p4_lhS61kOIRGtY",
+      "type": "video",
+      "used": true,
+      "used_at": "2026-08-14T02:38:06",
+      "dish_tags": [
+        "salmao"
+      ]
+    },
+    {
+      "file": "Vídeo da rabada, pista toda e salmão.mp4",
+      "folder": "Jun 26",
+      "drive_folder_id": "1M1htkZCYP1xtz0Nk3p4_lhS61kOIRGtY",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salmao",
+        "rabada"
+      ]
+    },
+    {
+      "file": "Edit pista de salada.mp4",
+      "folder": "Maio 26",
+      "drive_folder_id": "16xwCXxJjl8QQ6Zau4jB-Ao5a7O6sFOwm",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "variado"
+      ]
+    },
+    {
+      "file": "Edit pista doce.mp4",
+      "folder": "Maio 26",
+      "drive_folder_id": "16xwCXxJjl8QQ6Zau4jB-Ao5a7O6sFOwm",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "Problemas.mp4",
+      "folder": "Maio 26",
+      "drive_folder_id": "16xwCXxJjl8QQ6Zau4jB-Ao5a7O6sFOwm",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "variado"
+      ]
+    },
+    {
+      "file": "Edit - casa cheia.mp4",
+      "folder": "Março 26",
+      "drive_folder_id": "1T4c5t5-KLxWwgjCWFe2N7uo_R21CkZsq",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "Edit das massas.mp4",
+      "folder": "Março 26",
+      "drive_folder_id": "1T4c5t5-KLxWwgjCWFe2N7uo_R21CkZsq",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "Edit geral dos pratos.mp4",
+      "folder": "Março 26",
+      "drive_folder_id": "1T4c5t5-KLxWwgjCWFe2N7uo_R21CkZsq",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "variado"
+      ]
+    },
+    {
+      "file": "Edit pista doce.mp4",
+      "folder": "Março 26",
+      "drive_folder_id": "1T4c5t5-KLxWwgjCWFe2N7uo_R21CkZsq",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "Edit sushi.mp4",
+      "folder": "Março 26",
+      "drive_folder_id": "1T4c5t5-KLxWwgjCWFe2N7uo_R21CkZsq",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sushi"
+      ]
+    },
+    {
+      "file": "Montagem bife com molho madeira.mp4",
+      "folder": "Março 26",
+      "drive_folder_id": "1T4c5t5-KLxWwgjCWFe2N7uo_R21CkZsq",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "preparo"
+      ]
+    },
+    {
+      "file": "Montagem costela com batata.mp4",
+      "folder": "Março 26",
+      "drive_folder_id": "1T4c5t5-KLxWwgjCWFe2N7uo_R21CkZsq",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "costela_no_bafo"
+      ]
+    },
+    {
+      "file": "POV você encontrou o melhor lugar.mp4",
+      "folder": "Março 26",
+      "drive_folder_id": "1T4c5t5-KLxWwgjCWFe2N7uo_R21CkZsq",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "Video robson.mp4",
+      "folder": "Março 26",
+      "drive_folder_id": "1T4c5t5-KLxWwgjCWFe2N7uo_R21CkZsq",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "Edit geral da producao.mp4",
+      "folder": "Fevereiro 26",
+      "drive_folder_id": "1cKeiwn67pOm4ZW7JL1HFcs7AMH_9uDD1",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "Edit pista doce.mp4",
+      "folder": "Fevereiro 26",
+      "drive_folder_id": "1cKeiwn67pOm4ZW7JL1HFcs7AMH_9uDD1",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "Fazendo o suflê de espinafre.mp4",
+      "folder": "Fevereiro 26",
+      "drive_folder_id": "1cKeiwn67pOm4ZW7JL1HFcs7AMH_9uDD1",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "preparo"
+      ]
+    },
+    {
+      "file": "Feijoada.mp4",
+      "folder": "Fevereiro 26",
+      "drive_folder_id": "1cKeiwn67pOm4ZW7JL1HFcs7AMH_9uDD1",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "feijoada"
+      ]
+    },
+    {
+      "file": "Montando parmegiana.mp4",
+      "folder": "Fevereiro 26",
+      "drive_folder_id": "1cKeiwn67pOm4ZW7JL1HFcs7AMH_9uDD1",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "Narrado.mp4",
+      "folder": "Fevereiro 26",
+      "drive_folder_id": "1cKeiwn67pOm4ZW7JL1HFcs7AMH_9uDD1",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "variado",
+        "salao"
+      ]
+    },
+    {
+      "file": "pista quente.mp4",
+      "folder": "Fevereiro 26",
+      "drive_folder_id": "1cKeiwn67pOm4ZW7JL1HFcs7AMH_9uDD1",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "variado"
+      ]
+    },
+    {
+      "file": "Casa cheia",
+      "folder": "Robson edit",
+      "drive_folder_id": "1yf3ri2amCbDMh8mzdKDSRt0KpwqMchbD",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "Clientes comendo",
+      "folder": "Robson edit",
+      "drive_folder_id": "1yf3ri2amCbDMh8mzdKDSRt0KpwqMchbD",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "Momentos ",
+      "folder": "Robson edit",
+      "drive_folder_id": "1yf3ri2amCbDMh8mzdKDSRt0KpwqMchbD",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "variado"
+      ]
+    },
+    {
+      "file": "Montando prato",
+      "folder": "Robson edit",
+      "drive_folder_id": "1yf3ri2amCbDMh8mzdKDSRt0KpwqMchbD",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "variado"
+      ]
+    },
+    {
+      "file": "Pratos",
+      "folder": "Robson edit",
+      "drive_folder_id": "1yf3ri2amCbDMh8mzdKDSRt0KpwqMchbD",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "costela_no_bafo"
+      ]
+    },
+    {
+      "file": "Quinta sushi",
+      "folder": "Robson edit",
+      "drive_folder_id": "1yf3ri2amCbDMh8mzdKDSRt0KpwqMchbD",
+      "type": "video",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sushi"
+      ]
+    }
+  ]
+}

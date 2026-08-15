@@ -1,0 +1,730 @@
+{
+  "_readme": "Pool de fotos para carrossel de feed da Au Gratin, de 'Fotos - Tratadas/2026/<mes>'. Todas em .heic -- convertidas para JPEG pelo poller antes de postar (Facebook/Instagram nao aceitam HEIC de forma confiavel). Meses usados: Junho 26 (completo) e uma fatia recente de Maio 26. Cada entrada: file, folder, type, used, used_at. generate_week_plan.py escolhe 5 nao usadas por semana, reseta o pool quando esgota.",
+  "assets": [
+    {
+      "file": "IMG_7376.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "preparo"
+      ]
+    },
+    {
+      "file": "IMG_7377.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "preparo"
+      ]
+    },
+    {
+      "file": "IMG_7378.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "preparo"
+      ]
+    },
+    {
+      "file": "IMG_7387.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salmao"
+      ]
+    },
+    {
+      "file": "IMG_7388.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": true,
+      "used_at": "2026-08-05T15:09:12",
+      "dish_tags": [
+        "salmao"
+      ]
+    },
+    {
+      "file": "IMG_7390.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salmao"
+      ]
+    },
+    {
+      "file": "IMG_7392.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7397.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7398.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7401.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "variado"
+      ]
+    },
+    {
+      "file": "IMG_7408.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7411.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salmao"
+      ]
+    },
+    {
+      "file": "IMG_7414.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7415.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7416.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "variado"
+      ]
+    },
+    {
+      "file": "IMG_7436.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7437.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": true,
+      "used_at": "2026-08-05T15:09:12",
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7441.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7444.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7446.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7453.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_7455.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_7458.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7461.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7466.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7467.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7470.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7475.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": true,
+      "used_at": "2026-08-05T15:09:12",
+      "dish_tags": [
+        "variado"
+      ]
+    },
+    {
+      "file": "IMG_7476.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "variado"
+      ]
+    },
+    {
+      "file": "IMG_7480.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7485.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7488.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "outro"
+      ]
+    },
+    {
+      "file": "IMG_7490.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "rabada"
+      ]
+    },
+    {
+      "file": "IMG_7492.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "rabada"
+      ]
+    },
+    {
+      "file": "IMG_7495.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": true,
+      "used_at": "2026-08-05T15:09:12",
+      "dish_tags": [
+        "rabada"
+      ]
+    },
+    {
+      "file": "IMG_7496.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "rabada"
+      ]
+    },
+    {
+      "file": "IMG_7499.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "rabada"
+      ]
+    },
+    {
+      "file": "IMG_7500.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_7503.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_7504.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_7506.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_7507.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_7512.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_7515.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_7520.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_7525.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_7528.heic",
+      "folder": "2026/Junho 26",
+      "type": "image",
+      "used": true,
+      "used_at": "2026-08-05T15:09:12",
+      "dish_tags": [
+        "salmao",
+        "variado"
+      ]
+    },
+    {
+      "file": "IMG_3188.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao",
+        "rabada"
+      ]
+    },
+    {
+      "file": "IMG_3192.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3207.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3209.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3216.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3217.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3219.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3221.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3225.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3227.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3236.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3237.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3238.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3242.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_3248.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "feijoada",
+        "preparo"
+      ]
+    },
+    {
+      "file": "IMG_3249.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "feijoada",
+        "preparo"
+      ]
+    },
+    {
+      "file": "IMG_3251.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "feijoada",
+        "preparo"
+      ]
+    },
+    {
+      "file": "IMG_3252.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "feijoada"
+      ]
+    },
+    {
+      "file": "IMG_3258.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3259.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3262.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_3263.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "sobremesa"
+      ]
+    },
+    {
+      "file": "IMG_3268.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3273.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    },
+    {
+      "file": "IMG_3276.heic",
+      "folder": "2026/Maio 26",
+      "type": "image",
+      "used": false,
+      "used_at": null,
+      "dish_tags": [
+        "salao"
+      ]
+    }
+  ]
+}

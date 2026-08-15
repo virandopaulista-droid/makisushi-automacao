@@ -1,0 +1,209 @@
+name: Poller (stories/feed/reels)
+
+on:
+  schedule:
+    # Every 15 min, 15-17 UTC (12:00-14:59 America/Sao_Paulo, no DST),
+    # Mon-Fri. Covers the daily 12:00 story slot (buffet is closed
+    # weekends). The Friday 11:00 weekly slot needs its own separate window
+    # below (mornings). GitHub's cron has proven unreliable about firing at
+    # the exact configured time on the sibling Bernardino/TopTop/GM
+    # automations, so this is wide + frequent on purpose -- poller.py does
+    # catch-up matching (fires on whatever tick lands after a scheduled
+    # time, same day).
+    - cron: "*/15 15,16,17 * * 1-5"
+    # Friday morning window for the weekly reel/feed slot (11:00 BRT = 14:00 UTC).
+    - cron: "*/15 13,14,15 * * 5"
+  workflow_dispatch:
+    inputs:
+      live:
+        description: "Postar de verdade? (false = so testar o mount/ambiente, sem publicar)"
+        type: boolean
+        default: false
+      force_slot:
+        description: "(opcional, so p/ teste manual) forca postar agora, ignorando a janela de horario: story | weekly (usa --force-date tambem, ver README)"
+        type: string
+        default: ""
+      force_date:
+        description: "(opcional, junto com force_slot) data do post no cronograma, formato AAAA-MM-DD"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+
+# Same duplicate-post protections already proven necessary on
+# Bernardino's/TopTop's/GM Hamburgueria's automations, applied here from day one:
+# - concurrency group serializes overlapping runs so two ticks can't both
+#   read "not posted yet" and both post for real before either saves state.
+# - the "Trava de seguranca" step (right after checkout) refuses to run at
+#   all while a "risco de post duplicado" issue is open, so a human has to
+#   confirm the real state before posting resumes.
+# - the "Commit any state changes" step opens that issue if the state push
+#   fails 5x after a real post.
+# - poller.py itself marks a slot posted (not left blank) even when a
+#   handler crashes partway through, for the same reason.
+concurrency:
+  group: augratin-poller
+  cancel-in-progress: false
+
+env:
+  TZ: America/Sao_Paulo
+  LC_ALL: C.UTF-8
+  LANG: C.UTF-8
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  RCLONE_CONFIG_SECRET: ${{ secrets.RCLONE_CONFIG }}
+  FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+  FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+  IG_BUSINESS_ID: ${{ secrets.IG_BUSINESS_ID }}
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Trava de seguranca -- aborta se uma execucao anterior nao salvou o estado
+        run: |
+          open_alert=$(gh issue list --search "risco de post duplicado in:title" --state open --json number --jq 'length')
+          if [ "$open_alert" != "0" ]; then
+            echo "##[error] Existe uma issue aberta avisando que uma execucao anterior nao conseguiu salvar o estado apos publicar de verdade. Recusando rodar ate isso ser resolvido e a issue fechada manualmente -- ver issues abertas abaixo."
+            gh issue list --search "risco de post duplicado in:title" --state open
+            exit 1
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Checa se ha algo a postar agora (sem montar o Drive)
+        id: gate
+        run: |
+          if [ -n "${{ inputs.force_slot }}" ] && [ -n "${{ inputs.force_date }}" ]; then
+            echo "due=true" >> "$GITHUB_OUTPUT"
+            echo "forcado via workflow_dispatch (force_slot/force_date) -- pulando checagem"
+          elif python3 scripts/check_due.py; then
+            echo "due=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "due=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install system dependencies
+        if: steps.gate.outputs.due == 'true'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fuse3
+
+      - name: Install rclone
+        if: steps.gate.outputs.due == 'true'
+        run: curl https://rclone.org/install.sh | sudo bash
+
+      - name: Configure rclone and mount Google Drive
+        if: steps.gate.outputs.due == 'true'
+        run: |
+          mkdir -p ~/.config/rclone
+          printf '%s' "$RCLONE_CONFIG_SECRET" > ~/.config/rclone/rclone.conf
+          echo "rclone.conf: $(wc -c < ~/.config/rclone/rclone.conf) bytes"
+          echo "=== remotes configurados ==="
+          rclone listremotes || echo "(rclone listremotes falhou, exit $?)"
+          echo "=== teste direto de conexao (rclone about gdrive:) ==="
+          rclone about gdrive: || echo "(rclone about falhou, exit $?)"
+          mkdir -p "$HOME/gdrive"
+          if ! rclone mount gdrive: "$HOME/gdrive" \
+            --daemon --vfs-cache-mode=minimal --dir-cache-time=1h \
+            --timeout=60s --contimeout=60s --low-level-retries=15 \
+            --log-file="$HOME/rclone-mount.log" --log-level=INFO; then
+            echo "##[error] comando 'rclone mount' retornou erro na hora (nao entrou em background)"
+            echo "=== rclone mount log ==="
+            cat "$HOME/rclone-mount.log" 2>/dev/null || echo "(sem log)"
+            exit 1
+          fi
+          sleep 3
+          rclone lsf gdrive: -R --dirs-only > "$HOME/all_dirs.txt"
+          rel_path=$(grep -i "^Ag.ncia BEEF MTK/Clientes */Au Gratin/$" "$HOME/all_dirs.txt" | head -1)
+          if [ -z "$rel_path" ]; then
+            echo "=== nao encontrado, mostrando entradas parecidas ==="
+            grep -i "au gratin\|agencia\|ag.ncia" "$HOME/all_dirs.txt" | head -20
+            echo "mount failed: pasta Au Gratin nao encontrada"
+            exit 1
+          fi
+          augratin_dir="$HOME/gdrive/${rel_path}"
+          ready=""
+          for i in $(seq 1 15); do
+            if [ -d "$augratin_dir" ]; then
+              ready=1
+              break
+            fi
+            sleep 2
+          done
+          if [ -z "$ready" ]; then
+            echo "=== rclone mount log ==="
+            cat "$HOME/rclone-mount.log" || true
+            echo "mount failed: $augratin_dir nao apareceu no mount"
+            exit 1
+          fi
+          augratin_dir="${augratin_dir%/}"
+          echo "AUGRATIN_DIR=$augratin_dir" >> "$GITHUB_ENV"
+
+      - name: Write .env
+        if: steps.gate.outputs.due == 'true'
+        run: |
+          # Some subfolder names on the Drive have a trailing space (e.g.
+          # "Vídeos tratados ", "Fotos - Tratadas" does not) -- resolve the
+          # real on-disk name via ls+grep instead of hardcoding it, same
+          # defensive pattern as the "Clientes */Au Gratin" lookup above.
+          stories_name=$(ls "$AUGRATIN_DIR" | grep -i "^Stories Iasmim *$" | head -1)
+          videos_name=$(ls "$AUGRATIN_DIR" | grep -i "^V.deos tratados *$" | head -1)
+          fotos_name=$(ls "$AUGRATIN_DIR" | grep -i "^Fotos - Tratadas *$" | head -1)
+          cat > .env <<EOF
+          FB_PAGE_ACCESS_TOKEN="$FB_PAGE_ACCESS_TOKEN"
+          FB_PAGE_ID="$FB_PAGE_ID"
+          IG_BUSINESS_ID="$IG_BUSINESS_ID"
+          AUGRATIN_STORIES_DIR="$AUGRATIN_DIR/$stories_name"
+          AUGRATIN_VIDEOS_DIR="$AUGRATIN_DIR/$videos_name"
+          AUGRATIN_IMAGES_DIR="$AUGRATIN_DIR/$fotos_name"
+          EOF
+          cat .env | sed 's/^\(FB_PAGE_ACCESS_TOKEN\)=.*/\1=***/'
+
+      - name: Run poller
+        if: steps.gate.outputs.due == 'true'
+        run: |
+          extra_args=()
+          if [ -n "${{ inputs.force_slot }}" ]; then
+            extra_args+=(--force-slot "${{ inputs.force_slot }}")
+          fi
+          if [ -n "${{ inputs.force_date }}" ]; then
+            extra_args+=(--force-date "${{ inputs.force_date }}")
+          fi
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.live }}" = "true" ]; then
+            bash scripts/run_poller.sh --live "${extra_args[@]}"
+          else
+            bash scripts/run_poller.sh "${extra_args[@]}"
+          fi
+
+      - name: Commit any state changes (used flags, posted log)
+        if: always()
+        run: |
+          git config user.name "Au Gratin Automacao"
+          git config user.email "virandopaulista@gmail.com"
+          git add content/*.json content/week_plans/*.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "nada para commitar"
+            exit 0
+          fi
+          git commit -m "poller: atualiza estado (used/posted)"
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "push ok (tentativa $attempt)"
+              exit 0
+            fi
+            echo "push falhou, tentativa $attempt/5 -- rebase e tenta de novo"
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; git reset --soft origin/master; git stash pop 2>/dev/null || true; }
+            sleep $((attempt * 3))
+          done
+          echo "##[error] NAO CONSEGUI SALVAR O ESTADO APOS 5 TENTATIVAS -- risco real de post duplicado na proxima execucao"
+          run_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          body=$(printf 'O poller publicou (ou tentou publicar) e depois falhou 5x seguidas ao dar git push do estado atualizado em content/. Enquanto esta issue estiver aberta, o poller vai se recusar a rodar de novo (trava de seguranca no inicio do job).\n\nLog da execucao que falhou: %s\n\nO que fazer:\n1. Confira no log acima o que foi (ou nao foi) publicado de verdade no Facebook/Instagram.\n2. Resolva manualmente o conflito de git em content/*.json (git pull + resolver + push).\n3. Confira se o campo "posted" do slot correspondente esta correto antes de fechar esta issue.\n4. Feche esta issue so depois de confirmar que o estado no repositorio bate com o que foi realmente postado.' "$run_url")
+          gh issue create --title "URGENTE: risco de post duplicado -- estado do poller nao foi salvo" --body "$body" || echo "##[error] tambem falhei ao criar a issue de alerta -- verifique manualmente e com urgencia"
+          exit 1
