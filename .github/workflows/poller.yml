@@ -2,17 +2,21 @@ name: Poller (stories/feed/reels)
 
 on:
   schedule:
-    # Every 15 min, 15-17 UTC (12:00-14:59 America/Sao_Paulo, no DST),
-    # Mon-Fri. Covers the daily 12:00 story slot (buffet is closed
-    # weekends). The Friday 11:00 weekly slot needs its own separate window
-    # below (mornings). GitHub's cron has proven unreliable about firing at
-    # the exact configured time on the sibling Bernardino/TopTop/GM
-    # automations, so this is wide + frequent on purpose -- poller.py does
-    # catch-up matching (fires on whatever tick lands after a scheduled
-    # time, same day).
-    - cron: "*/15 15,16,17 * * 1-5"
-    # Friday morning window for the weekly reel/feed slot (11:00 BRT = 14:00 UTC).
-    - cron: "*/15 13,14,15 * * 5"
+    # Every 15 min, 22-23 + 0 UTC (19:00-21:59 America/Sao_Paulo, no DST),
+    # Mon-Sat. Covers the daily 19:00 story slot (restaurant opens 19h,
+    # closed... never, actually open every day it posts). The Friday 17:00
+    # weekly slot needs its own separate window below (late afternoon).
+    # GitHub's cron has proven unreliable about firing at the exact
+    # configured time on the sibling Bernardino/TopTop/GM automations, so
+    # this is wide + frequent on purpose -- poller.py does catch-up
+    # matching (fires on whatever tick lands after a scheduled time, same
+    # day). This is a backup layer on top of cron-job.org, which should be
+    # configured with a similarly-narrowed window calling this workflow's
+    # dispatch endpoint -- both exist so a single point of failure doesn't
+    # silently stop posting.
+    - cron: "*/15 22,23,0 * * 1-6"
+    # Friday late-afternoon window for the weekly reel/feed slot (17:00 BRT = 20:00 UTC).
+    - cron: "*/15 19,20,21 * * 5"
   workflow_dispatch:
     inputs:
       live:
@@ -149,12 +153,12 @@ jobs:
         if: steps.gate.outputs.due == 'true'
         run: |
           # Some subfolder names on the Drive have a trailing space (e.g.
-          # "Vídeos tratados ", "Fotos - Tratadas" does not) -- resolve the
+          # "Vídeos Tratados", "Tratadas" may not) -- resolve the
           # real on-disk name via ls+grep instead of hardcoding it, same
           # defensive pattern as the "Clientes */Maki Sushi" lookup above.
-          stories_name=$(ls "$MAKISUSHI_DIR" | grep -i "^Stories Iasmim *$" | head -1)
+          stories_name=$(ls "$MAKISUSHI_DIR" | grep -i "^Stories *$" | head -1)
           videos_name=$(ls "$MAKISUSHI_DIR" | grep -i "^V.deos tratados *$" | head -1)
-          fotos_name=$(ls "$MAKISUSHI_DIR" | grep -i "^Fotos - Tratadas *$" | head -1)
+          fotos_name=$(ls "$MAKISUSHI_DIR" | grep -i "^Tratadas *$" | head -1)
           cat > .env <<EOF
           FB_PAGE_ACCESS_TOKEN="$FB_PAGE_ACCESS_TOKEN"
           FB_PAGE_ID="$FB_PAGE_ID"
