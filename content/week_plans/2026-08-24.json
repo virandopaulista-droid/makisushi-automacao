@@ -1,0 +1,106 @@
+{
+  "week_start": "2026-08-24",
+  "status": "pending_approval",
+  "generated_at": "2026-08-27T13:05:02",
+  "posts": [
+    {
+      "date": "2026-08-24",
+      "weekday": "segunda",
+      "slot": "story",
+      "items": [
+        {
+          "file": "3f55a51d1bc94d9f9de7165915986d09.mov",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "weekday": "terca",
+      "slot": "story",
+      "items": [
+        {
+          "file": "3f39b374e5344f28b4765e2839599e88.mov",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "weekday": "quarta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "Delícias do mar te esperam... (1).mp4",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "weekday": "quinta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI (18).png",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "weekday": "sexta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "C2D1ECE2-D792-46DE-B079-32528770FB9A.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "weekday": "sexta",
+      "slot": "feed",
+      "items": [
+        {
+          "file": "IMG_7829.heic",
+          "folder": "Junho 26",
+          "dish_tags": null
+        },
+        {
+          "file": "IMG_7972.heic",
+          "folder": "Junho 26",
+          "dish_tags": null
+        },
+        {
+          "file": "IMG_7794.heic",
+          "folder": "Junho 26",
+          "dish_tags": null
+        },
+        {
+          "file": "IMG_4976.heic",
+          "folder": "Maio 26",
+          "dish_tags": null
+        },
+        {
+          "file": "IMG_0115.HEIC",
+          "folder": "Agosto 26",
+          "dish_tags": null
+        }
+      ],
+      "caption_text": "🍽️ Bora fazer aquele pedido/visita na Maki Sushi? Sempre com capricho, sempre pensando em te dar a melhor experiência.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30"
+    },
+    {
+      "date": "2026-08-29",
+      "weekday": "sabado",
+      "slot": "story",
+      "items": [
+        {
+          "file": "sexta-feira! (1).png",
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
