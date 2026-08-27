@@ -70,14 +70,14 @@
     {
       "file": "3f39b374e5344f28b4765e2839599e88.mov",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-27T13:05:02"
     },
     {
       "file": "3f55a51d1bc94d9f9de7165915986d09.mov",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-27T13:05:02"
     },
     {
       "file": "3f55a51d1bc94d9f9de7165915986d09.mov",
@@ -208,8 +208,8 @@
     {
       "file": "C2D1ECE2-D792-46DE-B079-32528770FB9A.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-27T13:05:02"
     },
     {
       "file": "c58778411d5248bc8107295bc5903597.mov",
@@ -238,8 +238,8 @@
     {
       "file": "Delícias do mar te esperam... (1).mp4",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-27T13:05:02"
     },
     {
       "file": "Delícias do mar te esperam....mp4",
@@ -280,8 +280,8 @@
     {
       "file": "sexta-feira! (1).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-27T13:05:02"
     },
     {
       "file": "sexta-feira! (2).png",
@@ -346,8 +346,8 @@
     {
       "file": "STORIES - MAKI SUSHI (18).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-27T13:05:02"
     },
     {
       "file": "STORIES - MAKI SUSHI (19).png",
