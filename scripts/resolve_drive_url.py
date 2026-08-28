@@ -49,7 +49,21 @@ def fetch_id_map(folder_id, attempts=4, delay_seconds=8):
         try:
             with urllib.request.urlopen(req) as resp:
                 html = resp.read().decode("utf-8", errors="replace")
-            return {name: file_id for file_id, name in PATTERN.findall(html)}
+            id_map = {name: file_id for file_id, name in PATTERN.findall(html)}
+            # Confirmado real 2026-08-28 (Au Gratin, reel): um 401 na 1a
+            # tentativa aciona o reshare_folder() acima, e a tentativa
+            # seguinte volta com HTTP 200 mas 0 arquivos -- o
+            # compartilhamento tinha acabado de ser restabelecido e o
+            # embed anonimo ainda nao tinha propagado o conteudo. Um
+            # dicionario vazio aqui NAO e confiavel como "pasta realmente
+            # vazia" logo depois de um reshare -- trata como retry-avel
+            # tambem (mesmo esperando entre tentativas), em vez de devolver
+            # {} direto pro chamador reportar "nao encontrado" sem nunca
+            # ter visto o conteudo de verdade.
+            if id_map or attempt == attempts:
+                return id_map
+            print(f"AVISO: pasta retornou 0 arquivos (tentativa {attempt}/{attempts}), pode ser propagacao do reshare -- tentando de novo em {delay_seconds}s...", file=sys.stderr)
+            time.sleep(delay_seconds)
         except urllib.error.HTTPError as e:
             if attempt == attempts:
                 raise
@@ -59,6 +73,7 @@ def fetch_id_map(folder_id, attempts=4, delay_seconds=8):
             else:
                 print(f"AVISO: erro HTTP {e.code} buscando a pasta do Drive (tentativa {attempt}/{attempts}), tentando de novo em {delay_seconds}s...", file=sys.stderr)
                 time.sleep(delay_seconds)
+    return {}
 
 
 def main():
