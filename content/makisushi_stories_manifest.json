@@ -46,8 +46,8 @@
     {
       "file": "1F178B3B-C2BF-454F-B782-F3BD22C72283.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-31T00:11:24"
     },
     {
       "file": "221CA6B3-6B82-4DA3-B6DA-4058838970DC.jpg",
@@ -82,8 +82,8 @@
     {
       "file": "3f55a51d1bc94d9f9de7165915986d09.mov",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-31T00:11:24"
     },
     {
       "file": "442CE323-17B2-4684-928A-69F06FEB2CF8.jpg",
@@ -214,8 +214,8 @@
     {
       "file": "c58778411d5248bc8107295bc5903597.mov",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-31T00:11:24"
     },
     {
       "file": "c58778411d5248bc8107295bc5903597.mov",
@@ -382,8 +382,8 @@
     {
       "file": "STORIES - MAKI SUSHI (23).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-31T00:11:24"
     },
     {
       "file": "STORIES - MAKI SUSHI (24).png",
@@ -478,14 +478,14 @@
     {
       "file": "STORIES - MAKI SUSHI (4).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-31T00:11:24"
     },
     {
       "file": "STORIES - MAKI SUSHI (40).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-08-31T00:11:24"
     },
     {
       "file": "STORIES - MAKI SUSHI (41).png",
