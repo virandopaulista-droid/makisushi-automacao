@@ -281,7 +281,8 @@
       "file": "sexta-feira! (1).png",
       "type": "image",
       "used": true,
-      "used_at": "2026-08-27T13:05:02"
+      "used_at": "2026-08-27T13:05:02",
+      "locked_weekday": "segunda"
     },
     {
       "file": "sexta-feira! (2).png",
@@ -347,13 +348,15 @@
       "file": "STORIES - MAKI SUSHI (18).png",
       "type": "image",
       "used": true,
-      "used_at": "2026-08-27T13:05:02"
+      "used_at": "2026-08-27T13:05:02",
+      "locked_weekday": "segunda"
     },
     {
       "file": "STORIES - MAKI SUSHI (19).png",
       "type": "image",
       "used": false,
-      "used_at": null
+      "used_at": null,
+      "locked_weekday": "terca"
     },
     {
       "file": "STORIES - MAKI SUSHI (2).png",
@@ -383,7 +386,8 @@
       "file": "STORIES - MAKI SUSHI (23).png",
       "type": "image",
       "used": true,
-      "used_at": "2026-08-31T00:11:24"
+      "used_at": "2026-08-31T00:11:24",
+      "locked_weekday": "quinta"
     },
     {
       "file": "STORIES - MAKI SUSHI (24).png",
@@ -401,7 +405,8 @@
       "file": "STORIES - MAKI SUSHI (26).png",
       "type": "image",
       "used": false,
-      "used_at": null
+      "used_at": null,
+      "locked_weekday": "sexta"
     },
     {
       "file": "STORIES - MAKI SUSHI (28).png",
@@ -425,7 +430,8 @@
       "file": "STORIES - MAKI SUSHI (30).png",
       "type": "image",
       "used": true,
-      "used_at": "2026-08-15T18:18:36"
+      "used_at": "2026-08-15T18:18:36",
+      "locked_weekday": "terca"
     },
     {
       "file": "STORIES - MAKI SUSHI (31).png",
@@ -449,7 +455,8 @@
       "file": "STORIES - MAKI SUSHI (34).png",
       "type": "image",
       "used": true,
-      "used_at": "2026-08-15T18:12:34"
+      "used_at": "2026-08-15T18:12:34",
+      "locked_weekday": "segunda"
     },
     {
       "file": "STORIES - MAKI SUSHI (35).png",
