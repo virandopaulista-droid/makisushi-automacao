@@ -92,7 +92,10 @@
           "folder": "Julho 26"
         }
       ],
-      "caption_text": "🍽️ O melhor sushi da região! \n\nCapricho, sempre pensando em te dar a melhor experiência.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30"
+      "caption_text": "🍽️ O melhor sushi da região! \n\nCapricho, sempre pensando em te dar a melhor experiência.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30",
+      "posted": true,
+      "posted_at": "2026-09-04T18:16:29",
+      "posting_error": "Falha parcial/total ao publicar -- verificar manualmente o que saiu de verdade. Erro: comando falhou (exit 254): ['bash', '/home/runner/work/makisushi-automacao/makisushi-automacao/scripts/convert_heic_to_jpg.sh', '/home/runner/gdrive/Agência BEEF MTK/Clientes /Maki Sushi/Tratadas/Fevereiro /IMG_1401.jpg', '/home/runner/work/makisushi-automacao/makisushi-automacao/_tmp_feed_0.jpg']"
     },
     {
       "date": "2026-09-05",
