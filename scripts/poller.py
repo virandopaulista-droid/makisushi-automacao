@@ -244,6 +244,9 @@ def _post_from_plan(post, plan, plan_path, now, slot_label):
         return
     if post.get("posted"):
         return  # already posted this window, avoid duplicate on the next tick
+    if post.get("skipped"):
+        print(f"AVISO: post de '{post['slot']}' ({post.get('date')}) esta marcado 'nao postar essa semana' -- pulando.", file=sys.stderr)
+        return
 
     print(f"Disparando slot '{post['slot']}' ({'DRY-RUN' if DRY_RUN else 'LIVE'})...")
     try:
