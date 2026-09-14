@@ -22,8 +22,8 @@
     {
       "file": "0C4112CD-D291-4A8D-8776-E00580796446.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-14T05:14:35"
     },
     {
       "file": "0e9c36ee64194fc3a18fe077ea78f488.mov",
@@ -154,8 +154,8 @@
     {
       "file": "8C318AB2-602A-480E-BF8F-B0DB571D4D2B.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-14T05:14:35"
     },
     {
       "file": "989F1855-7F9C-4D43-882C-7BB46FAB24ED.jpg",
@@ -178,8 +178,8 @@
     {
       "file": "ADBA4F73-0347-4EF9-94D9-6DE1DC499F5A.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-14T05:14:35"
     },
     {
       "file": "bb780b30b7834766b0a5f9b0bbe0b28a.mov",
@@ -329,8 +329,8 @@
     {
       "file": "STORIES - MAKI SUSHI (13).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-14T05:14:35"
     },
     {
       "file": "STORIES - MAKI SUSHI (15).png",
@@ -442,8 +442,8 @@
     {
       "file": "STORIES - MAKI SUSHI (32).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-14T05:14:35"
     },
     {
       "file": "STORIES - MAKI SUSHI (33).png",
@@ -557,8 +557,8 @@
     {
       "file": "venha experimentar nosso carpaccio de salmão.mp4",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-14T05:14:35"
     }
   ]
 }
