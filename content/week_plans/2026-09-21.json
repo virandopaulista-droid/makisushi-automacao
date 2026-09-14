@@ -1,0 +1,101 @@
+{
+  "week_start": "2026-09-21",
+  "status": "pending_approval",
+  "generated_at": "2026-09-14T05:14:35",
+  "posts": [
+    {
+      "date": "2026-09-21",
+      "weekday": "segunda",
+      "slot": "story",
+      "items": [
+        {
+          "file": "8C318AB2-602A-480E-BF8F-B0DB571D4D2B.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "weekday": "terca",
+      "slot": "story",
+      "items": [
+        {
+          "file": "ADBA4F73-0347-4EF9-94D9-6DE1DC499F5A.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "weekday": "quarta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "venha experimentar nosso carpaccio de salmão.mp4",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "weekday": "quinta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI (32).png",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "weekday": "sexta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI (13).png",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "weekday": "sexta",
+      "slot": "feed",
+      "items": [
+        {
+          "file": "IMG_7948.heic",
+          "folder": "Junho 26"
+        },
+        {
+          "file": "IMG_8983.HEIC",
+          "folder": "Julho 26"
+        },
+        {
+          "file": "IMG_4911.heic",
+          "folder": "Maio 26"
+        },
+        {
+          "file": "IMG_9096.HEIC",
+          "folder": "Julho 26"
+        },
+        {
+          "file": "IMG_7830.heic",
+          "folder": "Junho 26"
+        }
+      ],
+      "caption_text": "🍽️ Bora fazer aquele pedido/visita na Maki Sushi? Sempre com capricho, sempre pensando em te dar a melhor experiência.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30"
+    },
+    {
+      "date": "2026-09-26",
+      "weekday": "sabado",
+      "slot": "story",
+      "items": [
+        {
+          "file": "0C4112CD-D291-4A8D-8776-E00580796446.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
