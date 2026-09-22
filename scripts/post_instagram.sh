@@ -30,6 +30,7 @@ IG_BUSINESS_ID="$IG_BUSINESS_ID" FB_PAGE_ACCESS_TOKEN="$FB_PAGE_ACCESS_TOKEN" CA
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -41,11 +42,30 @@ access_token = os.environ["FB_PAGE_ACCESS_TOKEN"]
 with open(os.environ["CAPTION_FILE"], "r", encoding="utf-8") as f:
     caption = f.read().strip()
 
-def post_form(url, fields):
+def post_form(url, fields, retries=3, delay=15):
+    # BUG CORRIGIDO 2026-09-22 (mesmo fix ja aplicado no Bernardino em
+    # 2026-08-18): a propria Meta as vezes marca o erro como
+    # "is_transient": true ("tente de novo mais tarde") -- vale a pena
+    # tentar de novo automaticamente em vez de desistir na primeira,
+    # especialmente num carrossel com varias chamadas em sequencia.
     data = urllib.parse.urlencode(fields).encode("utf-8")
-    req = urllib.request.Request(url, data=data, method="POST")
-    with urllib.request.urlopen(req) as resp:
-        return json.loads(resp.read())
+    for attempt in range(1, retries + 1):
+        req = urllib.request.Request(url, data=data, method="POST")
+        try:
+            with urllib.request.urlopen(req) as resp:
+                return json.loads(resp.read())
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8")
+            try:
+                is_transient = json.loads(body).get("error", {}).get("is_transient", False)
+            except Exception:
+                is_transient = False
+            transient = is_transient or 500 <= e.code < 600
+            if attempt == retries or not transient:
+                print(f"Erro da API do Instagram: {body}", file=sys.stderr)
+                raise SystemExit(1)
+            print(f"AVISO: erro transitorio da Meta (tentativa {attempt}/{retries}), tentando de novo em {delay}s: {body}", file=sys.stderr)
+            time.sleep(delay)
 
 try:
     if len(image_urls) == 1:
