@@ -40,8 +40,8 @@
     {
       "file": "1E0D541C-158B-431B-9066-31B095F44E91.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-24T04:28:18"
     },
     {
       "file": "1F178B3B-C2BF-454F-B782-F3BD22C72283.jpg",
@@ -166,8 +166,8 @@
     {
       "file": "a27914671125476888bdd4a3051bda12.mov",
       "type": "video",
-      "used": true,
-      "used_at": "2026-09-24T04:27:58"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "a99346cedd594f8885aa89e9004bae9e.mov",
@@ -202,8 +202,8 @@
     {
       "file": "C224D0D4-D18D-4B2D-B304-A0DE350CDA07.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-24T04:28:18"
     },
     {
       "file": "C2D1ECE2-D792-46DE-B079-32528770FB9A.jpg",
@@ -293,8 +293,8 @@
     {
       "file": "sexta-feira! (3).png",
       "type": "image",
-      "used": true,
-      "used_at": "2026-09-24T04:28:06"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "sexta-feira! (4).png",
@@ -305,8 +305,8 @@
     {
       "file": "sexta-feira! (5).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-24T04:28:18"
     },
     {
       "file": "Sinômino.mp4",
@@ -379,8 +379,8 @@
     {
       "file": "STORIES - MAKI SUSHI (22).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-24T04:28:18"
     },
     {
       "file": "STORIES - MAKI SUSHI (23).png",
@@ -398,8 +398,8 @@
     {
       "file": "STORIES - MAKI SUSHI (25).png",
       "type": "image",
-      "used": true,
-      "used_at": "2026-09-24T04:28:08"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "STORIES - MAKI SUSHI (26).png",
@@ -503,8 +503,8 @@
     {
       "file": "STORIES - MAKI SUSHI (5).png",
       "type": "image",
-      "used": true,
-      "used_at": "2026-09-24T04:27:58"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "STORIES - MAKI SUSHI (6).png",
