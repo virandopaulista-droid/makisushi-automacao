@@ -598,8 +598,8 @@
     {
       "file": "STORIES - MAKI SUSHI - 69.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-09-24T04:42:07",
       "added_at": "2026-09-24T04:30:33.732Z"
     },
     {
@@ -628,8 +628,8 @@
     {
       "file": "D87A4223-7809-440D-ACCD-2E7020395DF7.jpg",
       "type": "image",
-      "used": true,
-      "used_at": "2026-09-24T04:41:53",
+      "used": false,
+      "used_at": null,
       "added_at": "2026-09-24T04:30:33.732Z",
       "folder": "Brenda - Stories ",
       "drive_folder_id": "1BPeqmCx7COqMTai46hYw6qGINAEuXTFh"
