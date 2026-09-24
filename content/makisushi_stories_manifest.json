@@ -100,8 +100,8 @@
     {
       "file": "48c79624bd154c0fa35c7ddddfbab9d6.mov",
       "type": "video",
-      "used": true,
-      "used_at": "2026-09-24T04:27:58"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "61f21d9d234a4fdebb9948c37e429362.mov",
@@ -398,8 +398,8 @@
     {
       "file": "STORIES - MAKI SUSHI (25).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-24T04:28:08"
     },
     {
       "file": "STORIES - MAKI SUSHI (26).png",
