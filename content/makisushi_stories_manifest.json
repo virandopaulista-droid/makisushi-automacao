@@ -293,8 +293,8 @@
     {
       "file": "sexta-feira! (3).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-09-24T04:28:06"
     },
     {
       "file": "sexta-feira! (4).png",
@@ -335,8 +335,8 @@
     {
       "file": "STORIES - MAKI SUSHI (15).png",
       "type": "image",
-      "used": true,
-      "used_at": "2026-09-24T04:27:58"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "STORIES - MAKI SUSHI (16).png",
