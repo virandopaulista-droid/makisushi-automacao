@@ -1,0 +1,92 @@
+{
+  "week_start": "2026-10-12",
+  "status": "pending_approval",
+  "generated_at": "2026-09-24T04:52:39",
+  "posts": [
+    {
+      "date": "2026-10-12",
+      "weekday": "segunda",
+      "slot": "story",
+      "items": [
+        {
+          "file": "D2BE04EC-E31F-4E20-B7BB-B00DF2193046.jpg",
+          "type": "image",
+          "folder": "Brenda - Stories ",
+          "drive_folder_id": "1BPeqmCx7COqMTai46hYw6qGINAEuXTFh"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "weekday": "terca",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI - 67.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "weekday": "quarta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "1B9F03BF-DB74-4E81-ABDA-F5FF8C699786.jpg",
+          "type": "image",
+          "folder": "Brenda - Stories ",
+          "drive_folder_id": "1BPeqmCx7COqMTai46hYw6qGINAEuXTFh"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "weekday": "quinta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI - 65.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "weekday": "sexta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "97C7433F-8EB2-434C-BFC3-A6557A9A1BD0.jpg",
+          "type": "image",
+          "folder": "Brenda - Stories ",
+          "drive_folder_id": "1BPeqmCx7COqMTai46hYw6qGINAEuXTFh"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "weekday": "sexta",
+      "slot": "reel",
+      "items": [
+        {
+          "file": "Vídeo da copa.mp4",
+          "folder": "Maio 26",
+          "drive_folder_id": "1wivbgepJ3JLTskmZnqVq18RDMXZZeCpg"
+        }
+      ],
+      "caption_text": "🍽️ Bora fazer aquele pedido/visita na Maki Sushi? Sempre com capricho, sempre pensando em te dar a melhor experiência.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30"
+    },
+    {
+      "date": "2026-10-17",
+      "weekday": "sabado",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI - 68.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
