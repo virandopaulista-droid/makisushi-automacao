@@ -64,8 +64,8 @@
     {
       "file": "3CD57344-AC47-4D3A-ACBD-562B9206B861.jpg",
       "type": "image",
-      "used": true,
-      "used_at": "2026-09-24T04:28:29"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "3f39b374e5344f28b4765e2839599e88.mov",
@@ -232,8 +232,8 @@
     {
       "file": "D34C071F-FCDA-497A-9E86-9F99FD633AB1.jpg",
       "type": "image",
-      "used": true,
-      "used_at": "2026-09-24T04:28:29"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "Delícias do mar te esperam... (1).mp4",
@@ -361,8 +361,8 @@
     {
       "file": "STORIES - MAKI SUSHI (2).png",
       "type": "image",
-      "used": true,
-      "used_at": "2026-09-24T04:28:29"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "STORIES - MAKI SUSHI (20).png",
@@ -515,8 +515,8 @@
     {
       "file": "STORIES - MAKI SUSHI (7).png",
       "type": "image",
-      "used": true,
-      "used_at": "2026-09-24T04:28:29"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "STORIES - MAKI SUSHI (8).png",
@@ -584,8 +584,8 @@
     {
       "file": "STORIES - MAKI SUSHI - 64.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-09-24T04:41:27",
       "added_at": "2026-09-24T04:30:33.732Z"
     },
     {
@@ -619,8 +619,8 @@
     {
       "file": "CB9B711A-1E65-44C3-AB79-3DE20A228F73.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-09-24T04:41:27",
       "added_at": "2026-09-24T04:30:33.732Z",
       "folder": "Brenda - Stories ",
       "drive_folder_id": "1BPeqmCx7COqMTai46hYw6qGINAEuXTFh"
@@ -655,8 +655,8 @@
     {
       "file": "D4059318-AE6C-44C6-BFA8-DA7C5019B7B9.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-09-24T04:41:27",
       "added_at": "2026-09-24T04:30:33.732Z",
       "folder": "Brenda - Stories ",
       "drive_folder_id": "1BPeqmCx7COqMTai46hYw6qGINAEuXTFh"
@@ -664,8 +664,8 @@
     {
       "file": "5DAA585E-FD1F-4B65-AAD5-2744C87C292B.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-09-24T04:41:27",
       "added_at": "2026-09-24T04:30:33.732Z",
       "folder": "Brenda - Stories ",
       "drive_folder_id": "1BPeqmCx7COqMTai46hYw6qGINAEuXTFh"
