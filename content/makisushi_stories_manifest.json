@@ -232,8 +232,8 @@
     {
       "file": "D34C071F-FCDA-497A-9E86-9F99FD633AB1.jpg",
       "type": "image",
-      "used": true,
-      "used_at": "2026-10-03T03:10:05"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "Delícias do mar te esperam... (1).mp4",
@@ -553,8 +553,8 @@
     {
       "file": "Temaki.mp4",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-03T03:10:07"
     },
     {
       "file": "venha experimentar nosso carpaccio de salmão.mp4",
