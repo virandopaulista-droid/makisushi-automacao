@@ -1,0 +1,101 @@
+{
+  "week_start": "2026-10-19",
+  "status": "pending_approval",
+  "generated_at": "2026-10-03T03:07:02",
+  "posts": [
+    {
+      "date": "2026-10-19",
+      "weekday": "segunda",
+      "slot": "story",
+      "items": [
+        {
+          "file": "0458BFB4-9D13-4FB0-A8C4-245500840B44.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "weekday": "terca",
+      "slot": "story",
+      "items": [
+        {
+          "file": "bb780b30b7834766b0a5f9b0bbe0b28a.mov",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "weekday": "quarta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "C224D0D4-D18D-4B2D-B304-A0DE350CDA07.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "weekday": "quinta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI (15).png",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "weekday": "sexta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI (9).png",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "weekday": "sexta",
+      "slot": "feed",
+      "items": [
+        {
+          "file": "IMG_5964.HEIC",
+          "folder": "Fevereiro "
+        },
+        {
+          "file": "IMG_5960.HEIC",
+          "folder": "Fevereiro "
+        },
+        {
+          "file": "IMG_4986.heic",
+          "folder": "Maio 26"
+        },
+        {
+          "file": "IMG_0096.HEIC",
+          "folder": "Agosto 26"
+        },
+        {
+          "file": "IMG_0145.HEIC",
+          "folder": "Agosto 26"
+        }
+      ],
+      "caption_text": "✨ Maki Sushi te espera hoje! Vem conferir tudo o que a gente preparou com cuidado especialmente pra você.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30"
+    },
+    {
+      "date": "2026-10-24",
+      "weekday": "sabado",
+      "slot": "story",
+      "items": [
+        {
+          "file": "3CD57344-AC47-4D3A-ACBD-562B9206B861.jpg",
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
