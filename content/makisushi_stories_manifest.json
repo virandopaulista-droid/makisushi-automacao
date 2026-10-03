@@ -118,8 +118,8 @@
     {
       "file": "6C2FA926-F796-46BC-ABFF-39800F017C5C.jpg",
       "type": "image",
-      "used": true,
-      "used_at": "2026-10-03T03:09:23"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "6C80E25F-A956-4789-A155-079B3009C488.jpg",
@@ -148,8 +148,8 @@
     {
       "file": "802E06DE-6E55-400B-9F05-4C22ACE52E42.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-03T03:09:25"
     },
     {
       "file": "8C318AB2-602A-480E-BF8F-B0DB571D4D2B.jpg",
