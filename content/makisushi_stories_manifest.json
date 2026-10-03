@@ -148,8 +148,8 @@
     {
       "file": "802E06DE-6E55-400B-9F05-4C22ACE52E42.jpg",
       "type": "image",
-      "used": true,
-      "used_at": "2026-10-03T03:09:25"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "8C318AB2-602A-480E-BF8F-B0DB571D4D2B.jpg",
@@ -503,8 +503,8 @@
     {
       "file": "STORIES - MAKI SUSHI (5).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-03T03:09:26"
     },
     {
       "file": "STORIES - MAKI SUSHI (6).png",
