@@ -34,8 +34,8 @@
     {
       "file": "14047245-BF4A-4E1A-8C1E-1F5D68B6BC40.jpg",
       "type": "image",
-      "used": true,
-      "used_at": "2026-10-03T03:08:58"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "1E0D541C-158B-431B-9066-31B095F44E91.jpg",
@@ -172,8 +172,8 @@
     {
       "file": "a99346cedd594f8885aa89e9004bae9e.mov",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-03T03:09:00"
     },
     {
       "file": "ADBA4F73-0347-4EF9-94D9-6DE1DC499F5A.jpg",
