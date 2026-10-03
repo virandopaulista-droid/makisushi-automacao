@@ -293,8 +293,8 @@
     {
       "file": "sexta-feira! (3).png",
       "type": "image",
-      "used": true,
-      "used_at": "2026-10-03T03:10:29"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "sexta-feira! (4).png",
@@ -648,8 +648,8 @@
     {
       "file": "1B9F03BF-DB74-4E81-ABDA-F5FF8C699786.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-10-03T03:11:00",
       "added_at": "2026-09-24T04:30:33.732Z",
       "folder": "Brenda - Stories ",
       "drive_folder_id": "1BPeqmCx7COqMTai46hYw6qGINAEuXTFh"
