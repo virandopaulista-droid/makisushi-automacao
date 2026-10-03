@@ -166,8 +166,8 @@
     {
       "file": "a27914671125476888bdd4a3051bda12.mov",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-03T03:07:38"
     },
     {
       "file": "a99346cedd594f8885aa89e9004bae9e.mov",
@@ -293,8 +293,8 @@
     {
       "file": "sexta-feira! (3).png",
       "type": "image",
-      "used": true,
-      "used_at": "2026-10-03T03:07:37"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "sexta-feira! (4).png",
