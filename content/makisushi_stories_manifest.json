@@ -118,8 +118,8 @@
     {
       "file": "6C2FA926-F796-46BC-ABFF-39800F017C5C.jpg",
       "type": "image",
-      "used": true,
-      "used_at": "2026-10-03T03:07:35"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "6C80E25F-A956-4789-A155-079B3009C488.jpg",
@@ -293,8 +293,8 @@
     {
       "file": "sexta-feira! (3).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-03T03:07:37"
     },
     {
       "file": "sexta-feira! (4).png",
