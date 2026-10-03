@@ -64,8 +64,8 @@
     {
       "file": "3CD57344-AC47-4D3A-ACBD-562B9206B861.jpg",
       "type": "image",
-      "used": true,
-      "used_at": "2026-10-03T03:08:08"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "3f39b374e5344f28b4765e2839599e88.mov",
@@ -535,8 +535,8 @@
     {
       "file": "SUNOMONO DA VIDA.mp4",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-03T03:08:10"
     },
     {
       "file": "sushi fresquinho, que dá água na boca... (1).mp4",
