@@ -64,8 +64,8 @@
     {
       "file": "3CD57344-AC47-4D3A-ACBD-562B9206B861.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-03T03:09:59"
     },
     {
       "file": "3f39b374e5344f28b4765e2839599e88.mov",
@@ -160,8 +160,8 @@
     {
       "file": "989F1855-7F9C-4D43-882C-7BB46FAB24ED.jpg",
       "type": "image",
-      "used": true,
-      "used_at": "2026-10-03T03:09:57"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "a27914671125476888bdd4a3051bda12.mov",
