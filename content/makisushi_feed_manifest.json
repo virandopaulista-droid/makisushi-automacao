@@ -421,8 +421,8 @@
       "type": "image",
       "folder": "Agosto 26",
       "drive_folder_id": "1fur39Dv4mg2YEdjLezm20289w9y2pdrf",
-      "used": true,
-      "used_at": "2026-10-03T03:07:02"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "IMG_0097.HEIC",
@@ -757,8 +757,8 @@
       "type": "image",
       "folder": "Agosto 26",
       "drive_folder_id": "1fur39Dv4mg2YEdjLezm20289w9y2pdrf",
-      "used": true,
-      "used_at": "2026-10-03T03:07:02"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "IMG_0146.HEIC",
@@ -1989,8 +1989,8 @@
       "type": "image",
       "folder": "Fevereiro ",
       "drive_folder_id": "15fNelW7lDRgGGjOh0WqL4XpPFSm9vkv7",
-      "used": true,
-      "used_at": "2026-10-03T03:07:02"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "IMG_5963.HEIC",
@@ -2005,8 +2005,8 @@
       "type": "image",
       "folder": "Fevereiro ",
       "drive_folder_id": "15fNelW7lDRgGGjOh0WqL4XpPFSm9vkv7",
-      "used": true,
-      "used_at": "2026-10-03T03:07:02"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "IMG_5967.HEIC",
@@ -5309,8 +5309,8 @@
       "type": "image",
       "folder": "Maio 26",
       "drive_folder_id": "10a3Wq_3DcY5u8XbDEJFDIceVygHFXMm6",
-      "used": true,
-      "used_at": "2026-10-03T03:07:02"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "IMG_4987.heic",
