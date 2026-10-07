@@ -168,7 +168,23 @@ def handle_story(post):
         return
 
     if item["type"] == "image":
-        print(bash("post_story_all.sh", path))
+        # Foto HEIC nao pode ir direto pro story: o Instagram recusa no
+        # media_publish (HTTP 400, visto na Latorre em 06/10/2026). Converte
+        # pra JPG antes, igual o feed ja fazia.
+        story_path = path
+        tmp_jpg = None
+        if path.lower().endswith((".heic", ".heif")):
+            tmp_jpg = os.path.join(PROJECT_DIR, "_tmp_story.jpg")
+            bash("convert_heic_to_jpg.sh", path, tmp_jpg)
+            story_path = tmp_jpg
+        try:
+            print(bash("post_story_all.sh", story_path))
+        finally:
+            if tmp_jpg:
+                try:
+                    os.remove(tmp_jpg)
+                except OSError:
+                    pass
     else:
         print(bash("post_story_video_fb.sh", path))
         folder_id = item.get("drive_folder_id") or os.environ.get("MAKISUSHI_STORIES_DRIVE_FOLDER_ID", "1F3WbMZlQzejEZd-6-2lOr7vU_Ge40hEB")

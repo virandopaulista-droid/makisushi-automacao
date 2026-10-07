@@ -97,6 +97,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fuse3
+          pip install --quiet Pillow pillow-heif
 
       - name: Install rclone
         if: steps.gate.outputs.due == 'true'
