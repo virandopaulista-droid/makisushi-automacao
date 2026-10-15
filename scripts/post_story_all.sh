@@ -100,6 +100,68 @@ def post_form_retry(url, fields, retries=5, delay=8):
             time.sleep(delay)
 
 
+def wait_container_ready(container_id, timeout=90, interval=3):
+    """Espera o Instagram terminar de processar a midia (status FINISHED) ANTES de
+    publicar. Sem isso, o media_publish logo apos criar o container volta
+    'Media ID is not available' (9007/2207027) e o retry cego as vezes cai em
+    'resource does not exist' (Maki Sushi, 14/10/2026)."""
+    deadline = time.time() + timeout
+    last = None
+    while time.time() < deadline:
+        try:
+            info = get_json(f"https://graph.facebook.com/v20.0/{container_id}?fields=status_code&access_token={urllib.parse.quote(token, safe='')}")
+            last = info.get("status_code")
+        except Exception:
+            last = None
+        if last == "FINISHED":
+            return True
+        if last in ("ERROR", "EXPIRED"):
+            print(f"  (container do IG em estado {last})", file=sys.stderr)
+            return False
+        time.sleep(interval)
+    print(f"  (container do IG nao ficou pronto em {timeout}s, ultimo estado: {last})", file=sys.stderr)
+    return False
+
+
+def story_published_recently(minutes=6):
+    """Confere nos stories ativos do IG se algum saiu nos ultimos minutos. Usado
+    quando o media_publish devolve erro: o Instagram as vezes publica e responde
+    erro mesmo assim, e dar o story por perdido deixa o dia sem post (ou
+    duplica, se alguem repostar na mao)."""
+    import datetime
+    try:
+        data = get_json(f"https://graph.facebook.com/v20.0/{ig_id}/stories?fields=id,timestamp&access_token={urllib.parse.quote(token, safe='')}")
+    except Exception:
+        return None
+    now = datetime.datetime.now(datetime.timezone.utc)
+    for st in data.get("data", []):
+        try:
+            ts = datetime.datetime.strptime(st["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+        except Exception:
+            continue
+        if (now - ts).total_seconds() <= minutes * 60:
+            return st
+    return None
+
+
+def publish_story_container(container_id):
+    if not wait_container_ready(container_id):
+        print("AVISO: sem confirmacao de FINISHED, tentando publicar mesmo assim.", file=sys.stderr)
+    try:
+        return post_form_retry(
+            f"https://graph.facebook.com/v20.0/{ig_id}/media_publish",
+            {"access_token": token, "creation_id": container_id},
+            retries=6,
+            delay=10,
+        )
+    except urllib.error.HTTPError as pe:
+        recent = story_published_recently()
+        if recent:
+            print(f"IG: media_publish respondeu erro (HTTP {pe.code}), mas o story JA esta publicado ({recent.get('id')}); seguindo como sucesso.", file=sys.stderr)
+            return {"id": recent.get("id"), "confirmado_por": "stories"}
+        raise
+
+
 for image_path in image_paths:
     image_bytes = read_file_with_retry(image_path)
     try:
@@ -121,10 +183,7 @@ for image_path in image_paths:
             f"https://graph.facebook.com/v20.0/{ig_id}/media",
             {"access_token": token, "image_url": public_url, "media_type": "STORIES"},
         )
-        ig_story = post_form_retry(
-            f"https://graph.facebook.com/v20.0/{ig_id}/media_publish",
-            {"access_token": token, "creation_id": container["id"]},
-        )
+        ig_story = publish_story_container(container["id"])
         print(f"IG story publicado: {image_path} -> {ig_story}")
     except urllib.error.HTTPError as e:
         try:
