@@ -42,7 +42,10 @@
           "folder": "Brenda - Stories ",
           "drive_folder_id": "1BPeqmCx7COqMTai46hYw6qGINAEuXTFh"
         }
-      ]
+      ],
+      "posted": true,
+      "posted_at": "2026-10-14T21:16:24",
+      "posting_error": "Falha parcial/total ao publicar -- verificar manualmente o que saiu de verdade. Erro: comando falhou (exit 1): ['bash', '/home/runner/work/makisushi-automacao/makisushi-automacao/scripts/post_story_all.sh', '/home/runner/gdrive/Agência BEEF MTK/Clientes /Maki Sushi/Stories /Brenda - Stories /1B9F03BF-DB74-4E81-ABDA-F5FF8C699786.jpg']"
     },
     {
       "date": "2026-10-15",
