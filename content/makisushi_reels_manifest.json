@@ -110,7 +110,9 @@
       "folder": "Março 26",
       "drive_folder_id": "1nxiM6kMoCm9zWOJz9N4AIazkx6-0l_6o",
       "used": true,
-      "used_at": "2026-10-19T11:56:38"
+      "used_at": "2026-10-19T11:56:38",
+      "disabled": true,
+      "disabled_at": "2026-10-19T11:56:59"
     },
     {
       "file": "Maki sushi  edit geral dos pratos, taco, montagem.mp4",
@@ -229,8 +231,8 @@
       "type": "video",
       "folder": "Fevereiro 26",
       "drive_folder_id": "1YsQWtuETH53TpPW8tXs2Z0KttefjLML4",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:56:59"
     },
     {
       "file": "Maki sushi video 2.mp4",
