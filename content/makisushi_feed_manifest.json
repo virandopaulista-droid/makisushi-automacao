@@ -4869,8 +4869,8 @@
       "type": "image",
       "folder": "Maio 26",
       "drive_folder_id": "10a3Wq_3DcY5u8XbDEJFDIceVygHFXMm6",
-      "used": true,
-      "used_at": "2026-10-19T11:55:14"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "IMG_4867.heic",
@@ -5517,8 +5517,8 @@
       "type": "image",
       "folder": "Maio 26",
       "drive_folder_id": "10a3Wq_3DcY5u8XbDEJFDIceVygHFXMm6",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:56:06"
     },
     {
       "file": "IMG_5023.heic",
