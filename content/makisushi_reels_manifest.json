@@ -37,8 +37,8 @@
       "type": "video",
       "folder": "Agosto 26",
       "drive_folder_id": "1JMH1ortsB3yhJqfJnDOF6uZZtlwKQbII",
-      "used": true,
-      "used_at": "2026-10-19T11:57:07"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "Maki - Video dia dos pais.mp4",
@@ -127,8 +127,8 @@
       "type": "video",
       "folder": "Maio 26",
       "drive_folder_id": "1wivbgepJ3JLTskmZnqVq18RDMXZZeCpg",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:57:13"
     },
     {
       "file": "Voce encontrou o melhor lugar.mp4",
