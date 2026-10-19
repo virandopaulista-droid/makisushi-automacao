@@ -37,8 +37,8 @@
       "type": "video",
       "folder": "Agosto 26",
       "drive_folder_id": "1JMH1ortsB3yhJqfJnDOF6uZZtlwKQbII",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:57:07"
     },
     {
       "file": "Maki - Video dia dos pais.mp4",
@@ -232,7 +232,9 @@
       "folder": "Fevereiro 26",
       "drive_folder_id": "1YsQWtuETH53TpPW8tXs2Z0KttefjLML4",
       "used": true,
-      "used_at": "2026-10-19T11:56:59"
+      "used_at": "2026-10-19T11:56:59",
+      "disabled": true,
+      "disabled_at": "2026-10-19T11:57:07"
     },
     {
       "file": "Maki sushi video 2.mp4",
