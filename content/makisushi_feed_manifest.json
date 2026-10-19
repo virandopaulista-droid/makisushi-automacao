@@ -2605,8 +2605,8 @@
       "type": "image",
       "folder": "Julho 26",
       "drive_folder_id": "1xFVsqCGqwhX5Y_-gv20C-4UNZbySU78r",
-      "used": true,
-      "used_at": "2026-10-19T11:56:18"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "IMG_9056.HEIC",
@@ -6285,8 +6285,8 @@
       "type": "image",
       "folder": "Março 26",
       "drive_folder_id": "1zNatUX0s1l0G9dMuQtqbUejaRBtB15lw",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:56:23"
     },
     {
       "file": "IMG_9630.HEIC",
