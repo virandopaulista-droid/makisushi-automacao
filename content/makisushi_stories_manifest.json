@@ -184,8 +184,8 @@
     {
       "file": "bb780b30b7834766b0a5f9b0bbe0b28a.mov",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:55:14"
     },
     {
       "file": "BD10824D-ED3F-402D-8B67-D0D77421069F.jpg",
@@ -232,8 +232,8 @@
     {
       "file": "D34C071F-FCDA-497A-9E86-9F99FD633AB1.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:55:14"
     },
     {
       "file": "Delícias do mar te esperam... (1).mp4",
@@ -323,8 +323,8 @@
     {
       "file": "STORIES - MAKI SUSHI (10).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:55:14"
     },
     {
       "file": "STORIES - MAKI SUSHI (13).png",
@@ -335,8 +335,8 @@
     {
       "file": "STORIES - MAKI SUSHI (15).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:55:14"
     },
     {
       "file": "STORIES - MAKI SUSHI (16).png",
@@ -515,8 +515,8 @@
     {
       "file": "STORIES - MAKI SUSHI (7).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:55:14"
     },
     {
       "file": "STORIES - MAKI SUSHI (8).png",
@@ -551,8 +551,8 @@
     {
       "file": "Temaki.mp4",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:55:14"
     },
     {
       "file": "venha experimentar nosso carpaccio de salmão.mp4",
