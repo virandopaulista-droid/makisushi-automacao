@@ -413,8 +413,8 @@
       "type": "image",
       "folder": "Agosto 26",
       "drive_folder_id": "1fur39Dv4mg2YEdjLezm20289w9y2pdrf",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:56:12"
     },
     {
       "file": "IMG_0096.HEIC",
@@ -5517,8 +5517,8 @@
       "type": "image",
       "folder": "Maio 26",
       "drive_folder_id": "10a3Wq_3DcY5u8XbDEJFDIceVygHFXMm6",
-      "used": true,
-      "used_at": "2026-10-19T11:56:06"
+      "used": false,
+      "used_at": null
     },
     {
       "file": "IMG_5023.heic",
