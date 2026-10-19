@@ -64,8 +64,8 @@
     {
       "file": "3CD57344-AC47-4D3A-ACBD-562B9206B861.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:56:38"
     },
     {
       "file": "3f39b374e5344f28b4765e2839599e88.mov",
@@ -118,8 +118,8 @@
     {
       "file": "6C2FA926-F796-46BC-ABFF-39800F017C5C.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:56:38"
     },
     {
       "file": "6C80E25F-A956-4789-A155-079B3009C488.jpg",
@@ -172,8 +172,8 @@
     {
       "file": "a99346cedd594f8885aa89e9004bae9e.mov",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:56:38"
     },
     {
       "file": "ADBA4F73-0347-4EF9-94D9-6DE1DC499F5A.jpg",
@@ -311,8 +311,8 @@
     {
       "file": "Sinômino.mp4",
       "type": "video",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:56:38"
     },
     {
       "file": "STORIES - MAKI SUSHI (1).png",
@@ -404,8 +404,8 @@
     {
       "file": "STORIES - MAKI SUSHI (26).png",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-10-19T11:56:38",
       "locked_weekday": "sexta"
     },
     {
@@ -473,8 +473,8 @@
     {
       "file": "STORIES - MAKI SUSHI (37).png",
       "type": "image",
-      "used": false,
-      "used_at": null
+      "used": true,
+      "used_at": "2026-10-19T11:56:38"
     },
     {
       "file": "STORIES - MAKI SUSHI (38).png",
