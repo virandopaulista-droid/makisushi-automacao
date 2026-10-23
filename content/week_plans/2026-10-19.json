@@ -91,7 +91,10 @@
           "folder": "Agosto 26"
         }
       ],
-      "caption_text": "🍽️ Bora fazer aquele pedido/visita na Maki Sushi? Sempre com capricho, sempre pensando em te dar a melhor experiência.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30"
+      "caption_text": "🍽️ Bora fazer aquele pedido/visita na Maki Sushi? Sempre com capricho, sempre pensando em te dar a melhor experiência.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30",
+      "posted": true,
+      "posted_at": "2026-10-23T17:01:34",
+      "posting_error": "Falha parcial/total ao publicar -- verificar manualmente o que saiu de verdade. Erro: comando falhou (exit 254): ['bash', '/home/runner/work/makisushi-automacao/makisushi-automacao/scripts/convert_heic_to_jpg.sh', '/home/runner/gdrive/Agência BEEF MTK/Clientes /Maki Sushi/Tratadas/Julho 26/IMG_9137.HEIC', '/home/runner/work/makisushi-automacao/makisushi-automacao/_tmp_feed_0.jpg']"
     },
     {
       "date": "2026-10-24",
