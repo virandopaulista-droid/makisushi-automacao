@@ -1,0 +1,27 @@
+{
+  "month": "2026-09",
+  "source": "canva",
+  "updatedAt": "2026-11-01T00:00:00-03:00",
+  "sales": {
+    "revenue": 131979.44,
+    "orders": 1426,
+    "channels": [
+      { "name": "Site", "revenue": 67000, "orders": 717 },
+      { "name": "99Food", "revenue": 27162.8 },
+      { "name": "iFood", "revenue": 3860.16 },
+      { "name": "Demais canais", "revenue": 33956.48 }
+    ]
+  },
+  "ads": {
+    "spend": 774.86,
+    "purchases": 181,
+    "costPerPurchase": 4.28,
+    "returnValue": 16762.37,
+    "linkClicks": 524,
+    "reach": 75123,
+    "impressions": 144604
+  },
+  "topContent": "O reel mais engajado foi um meme do funcionário que não fuma. O conteúdo apelativo gerou alcance de 9 mil pessoas, 78 curtidas e 11 compartilhamentos.",
+  "summary": "Faturamento de R$ 132 mil no mês, com alta de 7,3% sobre agosto. 1.426 pedidos, crescimento de 7,6%. O site puxou o resultado, com R$ 67 mil e 717 pedidos. O tráfego pago trouxe 181 compras e retorno de aproximadamente 21 vezes sobre o investido.",
+  "pdfUrl": "https://www.canva.com/d/M95O1FDYbtAq89q"
+}
