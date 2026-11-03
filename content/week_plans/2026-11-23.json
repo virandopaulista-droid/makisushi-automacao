@@ -1,0 +1,101 @@
+{
+  "week_start": "2026-11-23",
+  "status": "pending_approval",
+  "generated_at": "2026-11-03T00:29:27",
+  "posts": [
+    {
+      "date": "2026-11-23",
+      "weekday": "segunda",
+      "slot": "story",
+      "items": [
+        {
+          "file": "14047245-BF4A-4E1A-8C1E-1F5D68B6BC40.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "weekday": "terca",
+      "slot": "story",
+      "items": [
+        {
+          "file": "sexta-feira! (3).png",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "weekday": "quarta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "1E0D541C-158B-431B-9066-31B095F44E91.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "weekday": "quinta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "48c79624bd154c0fa35c7ddddfbab9d6.mov",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "weekday": "sexta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "C224D0D4-D18D-4B2D-B304-A0DE350CDA07.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "weekday": "sexta",
+      "slot": "feed",
+      "items": [
+        {
+          "file": "IMG_9156.HEIC",
+          "folder": "Julho 26"
+        },
+        {
+          "file": "IMG_9532.HEIC",
+          "folder": "Março 26"
+        },
+        {
+          "file": "IMG_4866.heic",
+          "folder": "Maio 26"
+        },
+        {
+          "file": "IMG_5941.HEIC",
+          "folder": "Fevereiro "
+        },
+        {
+          "file": "IMG_9111.HEIC",
+          "folder": "Julho 26"
+        }
+      ],
+      "caption_text": "✨ Maki Sushi te espera hoje! Vem conferir tudo o que a gente preparou com cuidado especialmente pra você.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30"
+    },
+    {
+      "date": "2026-11-28",
+      "weekday": "sabado",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI (2).png",
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
