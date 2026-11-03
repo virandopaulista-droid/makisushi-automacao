@@ -1,0 +1,86 @@
+{
+  "week_start": "2026-11-02",
+  "status": "pending_approval",
+  "generated_at": "2026-11-03T00:29:25",
+  "posts": [
+    {
+      "date": "2026-11-02",
+      "weekday": "segunda",
+      "slot": "story",
+      "items": [
+        {
+          "file": "0458BFB4-9D13-4FB0-A8C4-245500840B44.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "weekday": "terca",
+      "slot": "story",
+      "items": [
+        {
+          "file": "salmão grelhado com legumes + porção de arroz com gergelim.mp4",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "weekday": "quarta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI (5).png",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "weekday": "quinta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI (20).png",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "weekday": "sexta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "STORIES - MAKI SUSHI (9).png",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "weekday": "sexta",
+      "slot": "reel",
+      "items": [
+        {
+          "file": "Maki sushi video.mp4",
+          "folder": "Jul 26",
+          "drive_folder_id": "1VuRcyhF1x5N_9IjOw6W2sLYXoohanbWZ"
+        }
+      ],
+      "caption_text": "🍽️ Bora fazer aquele pedido/visita na Maki Sushi? Sempre com capricho, sempre pensando em te dar a melhor experiência.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30"
+    },
+    {
+      "date": "2026-11-07",
+      "weekday": "sabado",
+      "slot": "story",
+      "items": [
+        {
+          "file": "c6d0fac157754740b6a9f2776aa2611c.mov",
+          "type": "video"
+        }
+      ]
+    }
+  ]
+}
