@@ -1,0 +1,113 @@
+{
+  "week_start": "2026-11-30",
+  "status": "pending_approval",
+  "generated_at": "2026-11-22T22:57:00",
+  "posts": [
+    {
+      "date": "2026-11-30",
+      "weekday": "segunda",
+      "slot": "story",
+      "items": [
+        {
+          "file": "109.jpg",
+          "type": "image",
+          "folder": "Stories novos (Canva pág. 71 a 162)/FOTOS",
+          "drive_folder_id": "1teRlOUOZf6Y16yy-ydwP-mQws1Cr32eZ"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "weekday": "terca",
+      "slot": "story",
+      "items": [
+        {
+          "file": "146.jpg",
+          "type": "image",
+          "folder": "Stories novos (Canva pág. 71 a 162)/FOTOS",
+          "drive_folder_id": "1teRlOUOZf6Y16yy-ydwP-mQws1Cr32eZ"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "weekday": "quarta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "91.mp4",
+          "type": "video",
+          "folder": "Stories novos (Canva pág. 71 a 162)/VIDEOS",
+          "drive_folder_id": "1PaWX4cbekmDz4tyAU0304n7Elleh8M3u"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "weekday": "quinta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "82.jpg",
+          "type": "image",
+          "folder": "Stories novos (Canva pág. 71 a 162)/FOTOS",
+          "drive_folder_id": "1teRlOUOZf6Y16yy-ydwP-mQws1Cr32eZ"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "weekday": "sexta",
+      "slot": "story",
+      "items": [
+        {
+          "file": "136.jpg",
+          "type": "image",
+          "folder": "Stories novos (Canva pág. 71 a 162)/FOTOS",
+          "drive_folder_id": "1teRlOUOZf6Y16yy-ydwP-mQws1Cr32eZ"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "weekday": "sexta",
+      "slot": "feed",
+      "items": [
+        {
+          "file": "IMG_9124.HEIC",
+          "folder": "Julho 26"
+        },
+        {
+          "file": "IMG_9067.HEIC",
+          "folder": "Julho 26"
+        },
+        {
+          "file": "IMG_7917.heic",
+          "folder": "Junho 26"
+        },
+        {
+          "file": "IMG_9577.HEIC",
+          "folder": "Março 26"
+        },
+        {
+          "file": "IMG_5007.heic",
+          "folder": "Maio 26"
+        }
+      ],
+      "caption_text": "✨ Maki Sushi te espera hoje! Vem conferir tudo o que a gente preparou com cuidado especialmente pra você.\n\n📍 Rua Hermógenes Edgard Portes, 113 - Pedreira\n⏰ Segunda a quinta, 19h às 22h30 · sexta e sábado, 19h às 23h30"
+    },
+    {
+      "date": "2026-12-05",
+      "weekday": "sabado",
+      "slot": "story",
+      "items": [
+        {
+          "file": "159.jpg",
+          "type": "image",
+          "folder": "Stories novos (Canva pág. 71 a 162)/FOTOS",
+          "drive_folder_id": "1teRlOUOZf6Y16yy-ydwP-mQws1Cr32eZ"
+        }
+      ]
+    }
+  ]
+}
