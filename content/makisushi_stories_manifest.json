@@ -835,8 +835,8 @@
     {
       "file": "120.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-11-22T22:57:15",
       "added_at": "2026-11-22T22:55:46.832Z",
       "folder": "Stories novos (Canva pág. 71 a 162)/FOTOS",
       "drive_folder_id": "1teRlOUOZf6Y16yy-ydwP-mQws1Cr32eZ"
@@ -853,8 +853,8 @@
     {
       "file": "123.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-11-22T22:57:15",
       "added_at": "2026-11-22T22:55:46.832Z",
       "folder": "Stories novos (Canva pág. 71 a 162)/FOTOS",
       "drive_folder_id": "1teRlOUOZf6Y16yy-ydwP-mQws1Cr32eZ"
@@ -862,8 +862,8 @@
     {
       "file": "124.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-11-22T22:57:15",
       "added_at": "2026-11-22T22:55:46.832Z",
       "folder": "Stories novos (Canva pág. 71 a 162)/FOTOS",
       "drive_folder_id": "1teRlOUOZf6Y16yy-ydwP-mQws1Cr32eZ"
@@ -1024,8 +1024,8 @@
     {
       "file": "147.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-11-22T22:57:15",
       "added_at": "2026-11-22T22:55:46.832Z",
       "folder": "Stories novos (Canva pág. 71 a 162)/FOTOS",
       "drive_folder_id": "1teRlOUOZf6Y16yy-ydwP-mQws1Cr32eZ"
@@ -1096,8 +1096,8 @@
     {
       "file": "158.jpg",
       "type": "image",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-11-22T22:57:15",
       "added_at": "2026-11-22T22:55:46.832Z",
       "folder": "Stories novos (Canva pág. 71 a 162)/FOTOS",
       "drive_folder_id": "1teRlOUOZf6Y16yy-ydwP-mQws1Cr32eZ"
@@ -1375,8 +1375,8 @@
     {
       "file": "126.mp4",
       "type": "video",
-      "used": false,
-      "used_at": null,
+      "used": true,
+      "used_at": "2026-11-22T22:57:15",
       "added_at": "2026-11-22T22:55:46.832Z",
       "folder": "Stories novos (Canva pág. 71 a 162)/VIDEOS",
       "drive_folder_id": "1PaWX4cbekmDz4tyAU0304n7Elleh8M3u"
